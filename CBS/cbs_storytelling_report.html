@@ -105,15 +105,21 @@
             .funnel-label {
                 font-size: 1rem;
             }
+
             .funnel-sub {
                 font-size: 0.8rem;
             }
-            .fs-3 .funnel-label, .fs-4 .funnel-label {
+
+            .fs-3 .funnel-label,
+            .fs-4 .funnel-label {
                 font-size: 0.9rem;
             }
-            .fs-3 .funnel-sub, .fs-4 .funnel-sub {
-               font-size: 0.75rem;
+
+            .fs-3 .funnel-sub,
+            .fs-4 .funnel-sub {
+                font-size: 0.75rem;
             }
+        }
         }
 
         /* Premium Table Styles */
@@ -161,14 +167,39 @@
             font-weight: 600;
         }
 
-        /* Responsive Table */
+        /* Responsive Layout Fixes (Table, Grids, Funnel) */
         @media (max-width: 900px) {
             .data-table-wrapper {
                 overflow-x: auto;
                 -webkit-overflow-scrolling: touch;
+                width: 100%;
+                box-sizing: border-box;
+                /* Constrain wrapper width to viewport minus container padding (approx 4rem) */
+                max-width: calc(100vw - 4rem);
             }
+
             .data-table-wrapper table {
                 min-width: 600px;
+            }
+
+            /* Prevent grid columns from causing overflow */
+            .grid-2,
+            .grid-3 {
+                grid-template-columns: 1fr !important;
+            }
+
+            .channel-performance-grid {
+                grid-template-columns: 1fr !important;
+                gap: 2rem !important;
+            }
+
+            /* Prevent cards from bleeding past viewport bounds */
+            .card.glass,
+            .insight-card {
+                box-sizing: border-box;
+                width: 100%;
+                padding-left: 1.5rem !important;
+                padding-right: 1.5rem !important;
             }
         }
 
@@ -737,7 +768,7 @@
 
         .quadrant-row:last-child {
             margin-bottom: 0;
-            }
+        }
 
         .quadrant-label {
             font-weight: 800;

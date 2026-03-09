@@ -100,6 +100,22 @@
             text-shadow: none;
         }
 
+        /* Mobile specific funnel overrides to prevent text cut-off */
+        @media (max-width: 900px) {
+            .funnel-label {
+                font-size: 1rem;
+            }
+            .funnel-sub {
+                font-size: 0.8rem;
+            }
+            .fs-3 .funnel-label, .fs-4 .funnel-label {
+                font-size: 0.9rem;
+            }
+            .fs-3 .funnel-sub, .fs-4 .funnel-sub {
+               font-size: 0.75rem;
+            }
+        }
+
         /* Premium Table Styles */
         .data-table-wrapper {
             background: white;
@@ -143,6 +159,17 @@
 
         .data-table-wrapper td:first-child {
             font-weight: 600;
+        }
+
+        /* Responsive Table */
+        @media (max-width: 900px) {
+            .data-table-wrapper {
+                overflow-x: auto;
+                -webkit-overflow-scrolling: touch;
+            }
+            .data-table-wrapper table {
+                min-width: 600px;
+            }
         }
 
         /* Glassmorphism Cards */
@@ -525,7 +552,7 @@
                 </table>
             </div>
 
-            <div class="grid grid-2" style="margin-top: 3rem;">
+            <div class="grid grid-2 mobile-stack" style="margin-top: 3rem;">
                 <div class="card glass highlight reveal" style="color: var(--primary);">
                     <h3>Content Execution is on Track</h3>
                     <p>We are successfully updating blogs with stronger internal linking back to services and relevant
@@ -710,7 +737,7 @@
 
         .quadrant-row:last-child {
             margin-bottom: 0;
-        }
+            }
 
         .quadrant-label {
             font-weight: 800;

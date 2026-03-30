@@ -1,0 +1,929 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CBS SEO Progress & Strategic Roadmap — March 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --cream: #ECE8E2;
+            --teal-deep: #0D5A67;
+            --teal: #006778;
+            --teal-bright: #0097A7;
+            --peach: #FFBA7B;
+            --orange: #DC8044;
+            --white: #ffffff;
+            --maroon: #6B2C2C;
+            --light-gray: #f5f3f0;
+            --green: #2d7a6a;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: var(--cream);
+            color: var(--teal-deep);
+            font-weight: 300;
+            font-size: 17px;
+            line-height: 1.65;
+            overflow-x: hidden;
+        }
+
+        /* Background gradient blob */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 600px;
+            height: 600px;
+            background: radial-gradient(
+                circle at 100% 0%,
+                rgba(220, 128, 68, 0.15) 0%,
+                rgba(255, 186, 123, 0.1) 30%,
+                transparent 70%
+            );
+            filter: blur(80px);
+            z-index: -1;
+            pointer-events: none;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            padding: 40px 20px;
+            border-bottom: 1px solid rgba(13, 90, 103, 0.1);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        .header-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+        }
+
+        .logo {
+            width: 200px;
+            flex-shrink: 0;
+        }
+
+        .logo svg {
+            width: 100%;
+            height: auto;
+        }
+
+        .header-content h1 {
+            font-size: clamp(28px, 4vw, 48px);
+            font-weight: 400;
+            margin-bottom: 8px;
+            color: var(--teal-deep);
+        }
+
+        .header-content p {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            color: var(--teal);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 400;
+        }
+
+        /* Quick nav */
+        .quick-nav {
+            background-color: var(--white);
+            padding: 20px;
+            border-bottom: 1px solid rgba(13, 90, 103, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+        }
+
+        .quick-nav-inner {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .quick-nav-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--teal);
+            margin-bottom: 12px;
+            font-weight: 500;
+            display: block;
+        }
+
+        .quick-nav-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .quick-nav-links a {
+            display: inline-block;
+            padding: 8px 14px;
+            background-color: var(--light-gray);
+            color: var(--teal-deep);
+            text-decoration: none;
+            font-size: 13px;
+            border-radius: 4px;
+            transition: all 0.3s ease;
+            font-weight: 400;
+        }
+
+        .quick-nav-links a:hover {
+            background-color: var(--peach);
+            color: var(--white);
+        }
+
+        /* Main content */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 60px 20px;
+        }
+
+        /* Sections */
+        section {
+            margin-bottom: 80px;
+        }
+
+        .section-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--teal);
+            margin-bottom: 12px;
+            font-weight: 500;
+            padding-bottom: 8px;
+            border-bottom: 2px solid var(--peach);
+            display: inline-block;
+        }
+
+        h2 {
+            font-size: clamp(28px, 5vw, 40px);
+            font-weight: 400;
+            margin-bottom: 16px;
+            color: var(--teal-deep);
+            margin-top: 20px;
+        }
+
+        h3 {
+            font-size: 22px;
+            font-weight: 400;
+            margin-top: 32px;
+            margin-bottom: 16px;
+            color: var(--teal-deep);
+        }
+
+        h4 {
+            font-size: 18px;
+            font-weight: 500;
+            margin-top: 24px;
+            margin-bottom: 12px;
+            color: var(--teal-deep);
+        }
+
+        /* Status badge */
+        .status-badge {
+            display: inline-block;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-weight: 500;
+            font-size: 16px;
+            margin-bottom: 24px;
+            font-family: 'DM Sans', sans-serif;
+        }
+
+        .status-excellent {
+            background-color: rgba(45, 122, 106, 0.15);
+            color: var(--green);
+        }
+
+        .status-strong {
+            background-color: rgba(0, 151, 167, 0.15);
+            color: var(--teal-bright);
+        }
+
+        .status-upcoming {
+            background-color: rgba(220, 128, 68, 0.15);
+            color: var(--orange);
+        }
+
+        .status-foundational {
+            background-color: rgba(255, 186, 123, 0.15);
+            color: var(--orange);
+        }
+
+        /* Trend indicator */
+        .trend-indicator {
+            display: inline-block;
+            margin-left: 8px;
+            font-size: 20px;
+        }
+
+        /* Card */
+        .card {
+            background-color: var(--white);
+            padding: 32px;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            margin-bottom: 24px;
+        }
+
+        .card p {
+            margin-bottom: 16px;
+        }
+
+        .card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* Callout box */
+        .callout {
+            background-color: var(--light-gray);
+            border-left: 4px solid var(--teal-bright);
+            padding: 20px;
+            margin: 24px 0;
+            border-radius: 4px;
+        }
+
+        .callout-title {
+            font-weight: 500;
+            color: var(--teal-deep);
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+
+        .callout p {
+            margin: 0;
+            font-size: 15px;
+        }
+        
+        /* 3rd Party Perspective Box */
+        .perspective-box {
+            background-color: var(--light-gray);
+            border-left: 4px solid var(--orange);
+            padding: 20px;
+            margin: 24px 0;
+            border-radius: 4px;
+        }
+        
+        .perspective-box .callout-title {
+            color: var(--orange);
+        }
+
+        /* Lists */
+        ul, ol {
+            margin: 16px 0 16px 24px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        /* Tables */
+        .table-wrapper {
+            overflow-x: auto;
+            margin: 24px 0;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            background-color: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+        }
+
+        thead {
+            background-color: var(--light-gray);
+            border-bottom: 2px solid var(--peach);
+        }
+
+        th {
+            padding: 16px;
+            text-align: left;
+            font-weight: 500;
+            font-size: 14px;
+            color: var(--teal-deep);
+            font-family: 'JetBrains Mono', monospace;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        td {
+            padding: 14px 16px;
+            border-bottom: 1px solid rgba(13, 90, 103, 0.1);
+            font-size: 15px;
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        tbody tr:hover {
+            background-color: var(--light-gray);
+        }
+
+        /* Overview grid */
+        .overview-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 32px 0;
+        }
+
+        .overview-item {
+            background-color: var(--white);
+            padding: 24px;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .overview-label {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--teal);
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .overview-status {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 8px;
+            color: var(--teal-deep);
+        }
+
+        .overview-item.status-strong .overview-status,
+        .overview-item.status-excellent .overview-status {
+            color: var(--teal-bright);
+        }
+
+        .overview-item.status-upcoming .overview-status,
+        .overview-item.status-foundational .overview-status {
+            color: var(--orange);
+        }
+
+        /* Narrative text */
+        .narrative {
+            font-weight: 300;
+            margin: 24px 0;
+            padding: 20px;
+            background-color: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+            border-left: 4px solid var(--teal-deep);
+        }
+
+        /* Executive summary */
+        .exec-summary {
+            background-color: var(--white);
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            border-top: 4px solid var(--teal-bright);
+            margin-bottom: 40px;
+        }
+
+        .exec-summary h2 {
+            margin-top: 0;
+        }
+
+        .exec-summary p {
+            margin-bottom: 16px;
+        }
+
+        /* Schema checklist */
+        .schema-checklist {
+            background-color: var(--white);
+            padding: 24px;
+            border-radius: 8px;
+            box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+            margin: 24px 0;
+        }
+
+        .checklist-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid rgba(13, 90, 103, 0.1);
+        }
+
+        .checklist-item:last-child {
+            border-bottom: none;
+        }
+
+        .checklist-status {
+            width: 32px;
+            height: 32px;
+            border-radius: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 16px;
+            font-weight: 600;
+            font-size: 18px;
+            flex-shrink: 0;
+        }
+
+        .checklist-status.complete {
+            background-color: rgba(45, 122, 106, 0.15);
+            color: var(--green);
+        }
+
+        .checklist-status.in-progress {
+            background-color: rgba(255, 186, 123, 0.15);
+            color: var(--peach);
+        }
+
+        .checklist-label {
+            flex: 1;
+            font-weight: 400;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--teal-deep);
+            color: var(--cream);
+            padding: 40px 20px;
+            margin-top: 80px;
+        }
+
+        .footer-content {
+            max-width: 600px;
+            width: 50%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 20px;
+        }
+
+        .footer-logo {
+            width: 140px;
+            flex-shrink: 0;
+        }
+
+        .footer-logo svg {
+            width: 100%;
+            height: auto;
+        }
+
+        .footer-text {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 13px;
+            letter-spacing: 0.5px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .quick-nav-links {
+                gap: 8px;
+            }
+
+            .quick-nav-links a {
+                padding: 6px 10px;
+                font-size: 12px;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+                width: 100%;
+            }
+
+            .overview-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .table-wrapper {
+                font-size: 14px;
+            }
+
+            th, td {
+                padding: 12px;
+            }
+
+            main {
+                padding: 40px 20px;
+            }
+
+            section {
+                margin-bottom: 60px;
+            }
+        }
+
+        /* Link styling */
+        a {
+            color: var(--teal-bright);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: var(--orange);
+        }
+
+        /* Text highlights */
+        strong {
+            font-weight: 500;
+            color: var(--teal-deep);
+        }
+
+        em {
+            color: var(--teal);
+        }
+
+        /* Keyword performance color coding */
+        .perf-strong {
+            color: var(--teal-bright);
+            font-weight: 500;
+        }
+
+        .perf-weak {
+            color: var(--maroon);
+            font-weight: 500;
+        }
+
+        .perf-improving {
+            color: var(--orange);
+            font-weight: 500;
+        }
+
+        /* Ranking position colors */
+        .pos-1-3 {
+            background-color: rgba(45, 122, 106, 0.15);
+            color: var(--green);
+            font-weight: 500;
+        }
+
+        .pos-4-10 {
+            background-color: rgba(0, 151, 167, 0.15);
+            color: var(--teal-bright);
+            font-weight: 500;
+        }
+
+        .pos-11-30 {
+            background-color: rgba(255, 186, 123, 0.15);
+            color: var(--peach);
+            font-weight: 500;
+        }
+
+        .pos-31-50 {
+            background-color: rgba(220, 128, 68, 0.15);
+            color: var(--orange);
+            font-weight: 500;
+        }
+
+        .pos-50-plus, .pos-dropped {
+            background-color: rgba(107, 44, 44, 0.15);
+            color: var(--maroon);
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1520 346" fill="none"><path d="M67.2911 5.50427L153.389 200.364C156.561 207.564 166.839 207.505 169.951 200.306L253.818 5.56281C255.227 2.22637 258.516 0.119141 262.099 0.119141H311.726C318.245 0.119141 322.591 6.79204 320.007 12.704L176.588 340.495C175.178 343.773 171.889 345.88 168.307 345.88H157.031C153.448 345.88 150.277 343.773 148.808 340.554L0.808551 12.821C-1.89304 6.85055 2.51172 0.119141 9.03077 0.119141H59.0101C62.5926 0.119141 65.8228 2.22636 67.2911 5.50427Z" fill="#0D5A67"/><path d="M449.203 9.12949V332.53C449.203 337.506 445.151 341.545 440.159 341.545H392.059C387.067 341.545 383.014 337.506 383.014 332.53V9.12949C383.014 4.15409 387.067 0.115234 392.059 0.115234H440.159C445.151 0.115234 449.203 4.15409 449.203 9.12949Z" fill="#0D5A67"/><path d="M589.735 3.27794L774.617 219.737C780.079 226.117 790.533 222.254 790.533 213.884V9.07281C790.533 4.09741 794.585 0.0585466 799.577 0.0585466H846.209C851.201 0.0585466 855.254 4.09741 855.254 9.07281V332.474C855.254 337.449 851.201 341.488 846.209 341.488H802.573C799.93 341.488 797.404 340.317 795.643 338.269L609.527 118.122C604.124 111.683 593.552 115.546 593.552 123.917V332.415C593.552 337.391 589.5 341.43 584.508 341.43H537.876C532.884 341.43 528.832 337.391 528.832 332.415V9.01426C528.832 4.03886 532.884 0 537.876 0H582.805C585.447 0 587.973 1.17069 589.676 3.16085L589.735 3.27794Z" fill="#0D5A67"/><path d="M990.851 3.80473L1063.74 104.191C1067.32 109.166 1074.72 109.166 1078.36 104.191L1152.18 3.74618C1153.89 1.40482 1156.59 0.0585466 1159.47 0.0585466H1215.55C1223.01 0.0585466 1227.24 8.54599 1222.78 14.4579L1105.96 169.925C1104.79 171.505 1104.14 173.378 1104.14 175.31V332.415C1104.14 337.391 1100.09 341.43 1095.1 341.43H1047C1042.01 341.43 1037.95 337.391 1037.95 332.415V174.841C1037.95 172.91 1037.31 170.978 1036.13 169.398L918.672 14.4579C914.15 8.54599 918.437 0 925.896 0H983.569C986.447 0 989.207 1.40482 990.91 3.74618L990.851 3.80473Z" fill="#0D5A67"/><path d="M1353.74 9.12949V280.962C1353.74 285.937 1357.79 289.976 1362.78 289.976H1510.96C1515.95 289.976 1520 294.015 1520 298.99V332.53C1520 337.506 1515.95 341.545 1510.96 341.545H1296.59C1291.6 341.545 1287.55 337.506 1287.55 332.53V9.12949C1287.55 4.15409 1291.6 0.115234 1296.59 0.115234H1344.69C1349.68 0.115234 1353.74 4.15409 1353.74 9.12949Z" fill="#0D5A67"/></svg>
+            </div>
+            <div class="header-content">
+                <h1>CBS SEO Progress & Strategic Roadmap</h1>
+                <p>Prepared by Vinyl Marketing · March 2026</p>
+            </div>
+        </div>
+    </header>
+
+    <!-- Quick Navigation -->
+    <div class="quick-nav">
+        <div class="quick-nav-inner">
+            <span class="quick-nav-label">Jump To Section</span>
+            <div class="quick-nav-links">
+                <a href="#exec-summary">Executive Summary</a>
+                <a href="#section-1">Keyword Strategy</a>
+                <a href="#section-2">On-Page Optimization</a>
+                <a href="#section-3">Technical Foundation</a>
+                <a href="#section-4">Content Ecosystem</a>
+                <a href="#section-5">Ranking Momentum</a>
+                <a href="#section-6">AEO (AI Readiness)</a>
+                <a href="#section-7">Analytics & Conversion Roadmap</a>
+                <a href="#section-8">Multi-Channel Integration</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Executive Summary -->
+        <section id="exec-summary">
+            <span class="section-label">Executive Summary</span>
+            <div class="exec-summary">
+                <h2>Accelerated SEO Performance & The Path Forward</h2>
+                <p>Over the last three months, we've laid a formidable foundation for CBS's ongoing SEO strategy, and the results are hitting faster and harder than anticipated. By establishing strong technical performance and a rigorous content architecture, CBS now commands <strong>12 keywords at Position 1</strong> on Google search results—up from near-zero visibility just a few months ago.</p>
+                <p>What sets CBS apart right now is our proactive approach to the future of search. With <strong>AI Engine Optimization (AEO)</strong> practices firmly in place, including comprehensive schema markups on core service pages and AI summarization options across your vast 242-article library, the site isn't just ranking well on traditional search engines; it's actively formatted for AI models like ChatGPT and Perplexity to read, digest, and cite CBS as an authoritative source.</p>
+                <p>As we celebrate these immediate wins, we are simultaneously steering the ship toward the next strategic phases. Our over-arching roadmap involves strengthening specific niche service clusters (like Private Equity and Aerospace & Defense) and, critically, rolling out a robust lead generation and conversion tracking pipeline. This will allow us to seamlessly map these impressive ranking gains directly to attributable revenue.</p>
+
+                <h3 style="margin-top: 40px;">Current Progress Overview</h3>
+                <div class="overview-grid">
+                    <div class="overview-item status-strong">
+                        <span class="overview-label">Keyword Strategy</span>
+                        <div class="overview-status">Strong Progress</div>
+                    </div>
+                    <div class="overview-item status-strong">
+                        <span class="overview-label">On-Page Optimization</span>
+                        <div class="overview-status">Solid Foundation</div>
+                    </div>
+                    <div class="overview-item status-excellent">
+                        <span class="overview-label">Technical Foundation</span>
+                        <div class="overview-status">Excellent</div>
+                    </div>
+                    <div class="overview-item status-excellent">
+                        <span class="overview-label">Content Ecosystem</span>
+                        <div class="overview-status">Excellent</div>
+                    </div>
+                    <div class="overview-item status-excellent">
+                        <span class="overview-label">Ranking Momentum</span>
+                        <div class="overview-status">Exceptional</div>
+                    </div>
+                    <div class="overview-item status-excellent">
+                        <span class="overview-label">AEO (AI Readiness)</span>
+                        <div class="overview-status">Highly Advanced</div>
+                    </div>
+                    <div class="overview-item status-upcoming">
+                        <span class="overview-label">Analytics & Conversion</span>
+                        <div class="overview-status">Upcoming Phase</div>
+                    </div>
+                    <div class="overview-item status-strong">
+                        <span class="overview-label">Multi-Channel Integration</span>
+                        <div class="overview-status">Growing Integration</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 1: Keyword Research -->
+        <section id="section-1">
+            <span class="section-label">Phase 1</span>
+            <h2>Keyword Strategy & ICP Alignment</h2>
+            <span class="status-badge status-strong">Status: Strong Progress</span>
+
+            <div class="narrative">
+                Our approach to keyword research isn't about chasing every possible search term—it's about building domain authority methodically. We began by identifying over 1,000 highly contextual keywords that map directly to your decision-makers' pain points. By picking battles we could win early in the "Lean Manufacturing" and "Continuous Improvement" spaces, we've successfully established a beachhead of topical authority that will make it easier to rank for more difficult terms later.
+            </div>
+
+            <div class="card">
+                <h3>Strategic Highlights</h3>
+                <ul>
+                    <li><strong>Difficulty-Based Strategy:</strong> We successfully targeted moderate-difficulty keywords to build rapid topical authority. This initial momentum makes ranking for highly competitive terms easier moving forward.</li>
+                    <li><strong>Targeted ICPs:</strong> Our keywords are meticulously chosen to resonate with decision-makers at $250M+ enterprises in targeted sectors.</li>
+                    <li><strong>Immediate Successes:</strong> This strategy has directly resulted in our explosive growth, capturing page 1 for critical targeted terms like "lean manufacturing consulting" and "continuous improvement consulting services."</li>
+                </ul>
+
+                <h3>Roadmap: The Next Steps</h3>
+                <p>Following our plan, the next phase involves translating this success into the more highly competitive spaces:</p>
+                <ul>
+                    <li><strong>Private Equity & Aerospace/Defense:</strong> These are historically high-difficulty spaces. With our general authority now established, our strategy shifts toward attacking these highly specific, competitive clusters with targeted comparison content and tailored case studies.</li>
+                    <li><strong>Middle-Funnel Development:</strong> Expanding into mid-funnel queries that help prospects compare methodologies and specific industry challenges before committing to consulting engagements.</li>
+                </ul>
+                
+                <div class="perspective-box">
+                    <div class="callout-title">Third-Party Audit Perspective</div>
+                    <p>If another agency were to run an automated tool against the site today, they might note that we don't yet rank for the highest-volume "Private Equity" head terms. This is expected. Our strategy intentionally built authority via achievable segments first. We are now strategically positioned to scale into those more difficult conversations with dedicated, highly specific content drops over the next few quarters.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 2: On-Page SEO -->
+        <section id="section-2">
+            <span class="section-label">Phase 2</span>
+            <h2>On-Page Optimization & Content Formatting</h2>
+            <span class="status-badge status-strong">Status: Solid Foundation</span>
+
+            <div class="narrative">
+                Search engines value depth, structure, and internal connectivity. We have modernized and expanded the five core service pages into cornerstone content hubs. They now host deep explanations, structured FAQs, and embedded case studies showing real business impact (like a $70M operational saving). The structure signals exactly what CBS does to both readers and crawlers.
+            </div>
+
+            <div class="card">
+                <h3>Strategic Highlights</h3>
+                <ul>
+                    <li><strong>Service Page Deep Dives:</strong> Core pages (Lean, PE, OpEx, A&D, Continuous Improvement) have been fortified with expanded word counts, case studies, and FAQ sections.</li>
+                    <li><strong>Hub-and-Spoke Architecture:</strong> Your blog operates as the "spokes" that constantly feed relevance and authority back into the main service "hubs". We see this playing out perfectly in our 5S Methodology series.</li>
+                    <li><strong>Dual Optimization:</strong> Content titles strike the perfect balance—engaging enough for human click-through rates, yet optimized specifically for search engine parsing.</li>
+                </ul>
+
+                <h3>Roadmap: The Next Steps</h3>
+                <p>As the primary infrastructure is locked in, we are turning our focus to supplementary content types:</p>
+                <ul>
+                    <li><strong>Pillar Guides:</strong> We plan to develop comprehensive, 2,000+ word definitive guides representing the ultimate resource on specific operational strategies.</li>
+                    <li><strong>Comparison Content:</strong> Searching for "consulting vs in-house solutions" is a common decision stage. We plan to build dedicated pages to confidently answer these queries.</li>
+                </ul>
+                
+                <div class="perspective-box">
+                    <div class="callout-title">Third-Party Audit Perspective</div>
+                    <p>A third-party SEO scan might suggest expanding the word count on certain older pages to meet universal benchmarks. We view content length as a means to an end, not a strict rule. As part of our content roadmap, we are selectively expanding pages where deeper industry terminology and additional case studies will genuinely improve the user experience rather than adding fluff just for word counts.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Technical SEO -->
+        <section id="section-3">
+            <span class="section-label">Phase 3</span>
+            <h2>Technical Foundation</h2>
+            <span class="status-badge status-excellent">Status: Excellent</span>
+
+            <div class="narrative">
+                Under the hood, the CBS website is exceptionally healthy. We ensure the website respects the speed, security, and crawlability rules set by Google so that nothing artificially depresses our content's ability to rank. Based on industry-standard benchmarking, the site is passing with flying colors.
+            </div>
+
+            <div class="card">
+                <h3>Strategic Highlights</h3>
+                <ul>
+                    <li><strong>Excellent Health Score:</strong> The site consistently runs at a 92-94% health score based on extensive 50+ point technical signal checks.</li>
+                    <li><strong>Core Web Vitals:</strong> Page load speed, visual stability, and interactivity all pass Google's rigorous performance thresholds comfortably.</li>
+                    <li><strong>Clean Migrations:</strong> Legacy pages (such as the old OpEx page) were properly retired using canonicalization, ensuring we don't dilute the SEO strength of the improved v2 versions.</li>
+                </ul>
+
+                <h3>Roadmap: The Next Steps</h3>
+                <ul>
+                    <li><strong>Routine Maintenance:</strong> Technical SEO requires ongoing monitoring. We continually adjust small elements (refreshing orphaned pages, tweaking minification) to keep the site in top shape as it scales.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 4: Content Cadence -->
+        <section id="section-4">
+            <span class="section-label">Phase 4</span>
+            <h2>Content Ecosystem & Authority</h2>
+            <span class="status-badge status-excellent">Status: Excellent</span>
+
+            <div class="narrative">
+                Google increasingly demands proof of Experience, Expertise, Authoritativeness, and Trustworthiness (E-E-A-T) from its search results. CBS's content ecosystem is a masterclass in this, boasting over 240+ articles authored by the actual subject matter experts at CBS. This isn't generic content—it's high-value insight tied to real-world deployment.
+            </div>
+
+            <div class="card">
+                <h3>Strategic Highlights</h3>
+                <ul>
+                    <li><strong>Visible Expert Bylines:</strong> Articles written by figures like Jorge Sandoval, Steve Dowzicky, Bob Morin, and Ed Hoffman signal deep, genuine expertise to search engines.</li>
+                    <li><strong>Organized Discovery:</strong> The insights hub's filterability (by resource type, 17 solution areas, and various industries) makes it easy for visitors—and search crawlers—to navigate the vast library of knowledge.</li>
+                    <li><strong>Collaborative Calendar:</strong> A highly visible, shared editorial calendar ensures that new topics perfectly map to our keyword strategy and overarching company goals.</li>
+                </ul>
+
+                <h3>Roadmap: The Next Steps</h3>
+                <p>With top-of-funnel (educational) and bottom-of-funnel (service pages) well established, our next content phase targets the middle of the funnel.</p>
+                <ul>
+                    <li><strong>Refined Segmentation:</strong> We will be introducing segmented content paths, answering specific challenges depending on whether the reader is in private equity, manufacturing, or defense.</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Section 5: Ranking Trends -->
+        <section id="section-5">
+            <span class="section-label">Phase 5</span>
+            <h2>Ranking Momentum & Visibility</h2>
+            <span class="status-badge status-excellent">Status: Exceptional</span>
+
+            <div class="narrative">
+                The results of our foundational work are speaking for themselves. Over the past three months, CBS has experienced an explosive growth in visibility for critical phrases that generate high-value consulting engagements.
+            </div>
+
+            <div class="card">
+                <h3>Strategic Highlights</h3>
+                <p>In roughly 90 days, we have successfully secured:</p>
+                <ul>
+                    <li><strong>16 keywords</strong> pushing onto Page 1</li>
+                    <li><strong>12 keywords</strong> locking into Position 1</li>
+                </ul>
+
+                <p>This includes massive 20+ position jumps for critical target phrases such as <em>"lean manufacturing consulting"</em>, <em>"continuous improvement consulting for enterprises"</em>, and <em>"change leadership consulting"</em>.</p>
+
+                <h3>Roadmap: The Next Steps</h3>
+                <p>Our focus shifts toward defending these #1 spots while aggressively executing our plan to elevate rankings in our secondary wave of keyword clusters (A&D and PE categories). Because these are highly competitive words, we expected them to take a bit longer, and we have targeted tactics rolling out to address them specifically.</p>
+            </div>
+        </section>
+
+        <!-- Section 6: AEO Readiness -->
+        <section id="section-6">
+            <span class="section-label">Phase 6</span>
+            <h2>AI Engine Optimization (AEO)</h2>
+            <span class="status-badge status-excellent">Status: Highly Advanced</span>
+
+            <div class="narrative">
+                As search habits evolve to rely more on generative AI (like ChatGPT, Claude, and Google's AI Overviews), we've ensured CBS is fully equipped to be the cited expert. We are deploying forward-thinking tactics here that very few B2B enterprise consulting firms are currently utilizing.
+            </div>
+
+            <div class="card">
+                <h3>Strategic Highlights</h3>
+                <ul>
+                    <li><strong>Full Schema Deployment:</strong> Our live verification confirms all five core service pages feature robust "FAQ" and "Service" structural markup. This code explicitly dictates your organizational data to AI models.</li>
+                    <li><strong>AI Summarization Hooks:</strong> Your blog now utilizes one-click AI summarization buttons linking to ChatGPT, Perplexity, and others, facilitating user engagement while teaching language models that CBS is a go-to source.</li>
+                    <li><strong>Dedicated LLM Brief:</strong> A live `llms.txt` file is actively guiding AI crawlers through the CBS expertise ecosystem automatically.</li>
+                </ul>
+                
+                <div class="perspective-box">
+                    <div class="callout-title">Third-Party Audit Perspective</div>
+                    <p>Most automated or traditional SEO audit tools are still catching up to the AI revolution. An old-school audit might flag schema elements or miss recent implementations entirely simply because their crawlers are outdated. If another agency questions our structured data, our answer is simple: we can provide live, verified code tests proving that our AI schema infrastructure is actively rendering and fully complete on all major pages.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 7: Analytics -->
+        <section id="section-7">
+            <span class="section-label">Phase 7</span>
+            <h2>Analytics & Conversion Tracking</h2>
+            <span class="status-badge status-upcoming">Status: Upcoming Phase</span>
+
+            <div class="narrative">
+                With traffic and page-1 rankings sharply increasing, our next major priority shifts away from simply <em>getting</em> traffic and toward <em>measuring its exact dollar value.</em> We have Google Analytics (GA4) correctly monitoring the site visually, but the overarching strategic plan focuses on how we convert these visitors.
+            </div>
+
+            <div class="card">
+                <h3>Roadmap: The Next Steps</h3>
+                <p>This is arguably the most exciting upcoming phase of our engagement. We are actively finalizing a proposal to turn the CBS website into an easily-traceable lead generation machine. Once approved, the plan includes:</p>
+                <ul>
+                    <li><strong>Lead Magnets:</strong> Implementing high-value downloadable resources (like assessments or whitepapers) to capture mid-funnel prospect information.</li>
+                    <li><strong>Smart Forms & CRM Integration:</strong> Capturing lead intent and sending it directly into HubSpot to start tailored sales workflows.</li>
+                    <li><strong>Attribution Modeling:</strong> Modifying our GA4 event tracking so we can point to an exact keyword and show exactly how many qualified leads it generated this quarter.</li>
+                </ul>
+
+                <div class="perspective-box">
+                    <div class="callout-title">Third-Party Audit Perspective</div>
+                    <p>A third-party audit would rightly point out that without sophisticated middle-funnel conversion tracking, we cannot calculate exact ROI for these new organic visits. We completely agree! That's exactly why building out the lead generation infrastructure and full-loop HubSpot tracking is our main prerogative going into this next phase of the strategy.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 8: Cross-Channel -->
+        <section id="section-8">
+            <span class="section-label">Phase 8</span>
+            <h2>Multi-Channel Integration</h2>
+            <span class="status-badge status-strong">Status: Growing Integration</span>
+
+            <div class="narrative">
+                SEO doesn't exist in a vacuum. By unifying content efforts across LinkedIn, the blog, and email, we amplify our reach and ensure the message remains consistent wherever the prospect interacts with CBS. The alignment between site SEO and LinkedIn presence is creating a strong network effect.
+            </div>
+
+            <div class="card">
+                <h3>Strategic Highlights</h3>
+                <ul>
+                    <li><strong>Unified Calendar:</strong> Blog posts are purposefully repurposed into engaging, platform-native LinkedIn content, extending the lifespan and value of every piece we write.</li>
+                    <li><strong>Expert Amplification:</strong> CBS principals are actively driving engagement, cementing trust and bringing prospects directly back to the site.</li>
+                </ul>
+
+                <h3>Roadmap: The Next Steps</h3>
+                <ul>
+                    <li><strong>Video and Email Playbooks:</strong> Supported by the lead-generation efforts (Phase 7), we plan to introduce automated email nurture sequences and start strategically repurposing CBS video content for YouTube SEO discoverability.</li>
+                </ul>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1520 346" fill="none"><path d="M67.2911 5.50427L153.389 200.364C156.561 207.564 166.839 207.505 169.951 200.306L253.818 5.56281C255.227 2.22637 258.516 0.119141 262.099 0.119141H311.726C318.245 0.119141 322.591 6.79204 320.007 12.704L176.588 340.495C175.178 343.773 171.889 345.88 168.307 345.88H157.031C153.448 345.88 150.277 343.773 148.808 340.554L0.808551 12.821C-1.89304 6.85055 2.51172 0.119141 9.03077 0.119141H59.0101C62.5926 0.119141 65.8228 2.22636 67.2911 5.50427Z" fill="#ECE8E2"/><path d="M449.203 9.12949V332.53C449.203 337.506 445.151 341.545 440.159 341.545H392.059C387.067 341.545 383.014 337.506 383.014 332.53V9.12949C383.014 4.15409 387.067 0.115234 392.059 0.115234H440.159C445.151 0.115234 449.203 4.15409 449.203 9.12949Z" fill="#ECE8E2"/><path d="M589.735 3.27794L774.617 219.737C780.079 226.117 790.533 222.254 790.533 213.884V9.07281C790.533 4.09741 794.585 0.0585466 799.577 0.0585466H846.209C851.201 0.0585466 855.254 4.09741 855.254 9.07281V332.474C855.254 337.449 851.201 341.488 846.209 341.488H802.573C799.93 341.488 797.404 340.317 795.643 338.269L609.527 118.122C604.124 111.683 593.552 115.546 593.552 123.917V332.415C593.552 337.391 589.5 341.43 584.508 341.43H537.876C532.884 341.43 528.832 337.391 528.832 332.415V9.01426C528.832 4.03886 532.884 0 537.876 0H582.805C585.447 0 587.973 1.17069 589.676 3.16085L589.735 3.27794Z" fill="#ECE8E2"/><path d="M990.851 3.80473L1063.74 104.191C1067.32 109.166 1074.72 109.166 1078.36 104.191L1152.18 3.74618C1153.89 1.40482 1156.59 0.0585466 1159.47 0.0585466H1215.55C1223.01 0.0585466 1227.24 8.54599 1222.78 14.4579L1105.96 169.925C1104.79 171.505 1104.14 173.378 1104.14 175.31V332.415C1104.14 337.391 1100.09 341.43 1095.1 341.43H1047C1042.01 341.43 1037.95 337.391 1037.95 332.415V174.841C1037.95 172.91 1037.31 170.978 1036.13 169.398L918.672 14.4579C914.15 8.54599 918.437 0 925.896 0H983.569C986.447 0 989.207 1.40482 990.91 3.74618L990.851 3.80473Z" fill="#ECE8E2"/><path d="M1353.74 9.12949V280.962C1353.74 285.937 1357.79 289.976 1362.78 289.976H1510.96C1515.95 289.976 1520 294.015 1520 298.99V332.53C1520 337.506 1515.95 341.545 1510.96 341.545H1296.59C1291.6 341.545 1287.55 337.506 1287.55 332.53V9.12949C1287.55 4.15409 1291.6 0.115234 1296.59 0.115234H1344.69C1349.68 0.115234 1353.74 4.15409 1353.74 9.12949Z" fill="#ECE8E2"/></svg>
+            </div>
+            <div class="footer-text">
+                <p><strong>Vinyl Marketing</strong></p>
+                <p style="margin-top: 4px;">Strategic Progress Report</p>
+                <p style="margin-top: 4px;">March 2026</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

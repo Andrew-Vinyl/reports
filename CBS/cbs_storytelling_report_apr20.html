@@ -387,11 +387,127 @@
                 border-bottom: 4px solid var(--primary);
             }
 
-            .quadrant-row {
+        .quadrant-row {
                 flex-direction: column;
                 gap: 0.5rem;
             }
         }
+
+        /* Market Signals Override Styles */
+        .market-signals {
+            background-color: #fcfcfc;
+            border-top: 1px solid #eaeaea;
+            border-bottom: 2px solid var(--primary);
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            font-family: var(--font-sans);
+        }
+        .ms-header {
+            font-family: var(--font-mono);
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            letter-spacing: 2px;
+            color: #64748b;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+        .ms-narrative p {
+            font-size: 1.15rem;
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            color: #1e293b;
+            max-width: 800px;
+        }
+        .ms-chart-caption {
+            font-size: 0.85rem;
+            color: #475569;
+            font-style: italic;
+            margin-top: 1rem;
+            margin-bottom: 3rem;
+            border-left: 3px solid var(--accent-teal);
+            padding-left: 1rem;
+        }
+        .rank-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+        .rank-table th {
+            text-align: left;
+            padding: 0.75rem 1rem;
+            font-family: var(--font-mono);
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            color: #64748b;
+            border-bottom: 2px solid #cbd5e1;
+        }
+        .rank-table td {
+            padding: 0.75rem 1rem;
+            border-bottom: 1px solid #e2e8f0;
+            color: #334155;
+        }
+        .tag {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            font-size: 0.75rem;
+            font-family: var(--font-mono);
+            border-radius: 4px;
+            background-color: #e2e8f0;
+            color: #475569;
+        }
+        .tag.op-ex { background-color: #e0f2fe; color: #0369a1; }
+        .tag.lean { background-color: #f1f5f9; color: #475569; }
+        .tag.supply { background-color: #fef3c7; color: #b45309; }
+        .tag.people { background-color: #fce7f3; color: #be185d; }
+
+        .heatmap-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.85rem;
+            margin-bottom: 1rem;
+        }
+        .heatmap-table th, .heatmap-table td {
+            padding: 1rem;
+            text-align: center;
+            border: 1px solid #fff;
+        }
+        .heatmap-table th {
+            background-color: #f8fafc;
+            color: #475569;
+            font-family: var(--font-mono);
+            font-weight: 600;
+        }
+        .heatmap-table td:first-child {
+            text-align: left;
+            font-weight: 600;
+            background-color: #f8fafc;
+            color: #475569;
+        }
+        .heat-5 { background-color: #0c4a6e; color: white; }
+        .heat-4 { background-color: #0284c7; color: white; }
+        .heat-3 { background-color: #7dd3fc; color: #0c4a6e; }
+        .heat-2 { background-color: #e0f2fe; color: #0c4a6e; }
+        .heat-1 { background-color: #f1f5f9; color: #64748b; }
+
+        .vanity-row {
+            background-color: #fff1f2;
+        }
+        .vanity-label {
+            background-color: #fda4af;
+            color: #881337;
+            font-size: 0.7rem;
+            padding: 2px 6px;
+            border-radius: 4px;
+            font-weight: bold;
+            font-family: var(--font-mono);
+            margin-left: 8px;
+            text-transform: uppercase;
+        }
+
+        .delta-up { color: #059669; font-weight: bold; }
+        .delta-down { color: #dc2626; font-weight: bold; }
   </style>
  </head>
  <body>
@@ -414,6 +530,408 @@
     </div>
    </div>
   </section>
+
+  <!-- MARKET SIGNALS SECTION -->
+  <section class="market-signals">
+   <div class="container">
+    <div style="margin-bottom: 4rem;">
+     <h2 style="font-size: 2.5rem; color: var(--primary); margin-bottom: 0.5rem;">Market Signals Briefing</h2>
+     <div class="ms-header">Analysis Period: Mar 20 - Apr 20, 2026 | Audience: Executive Leadership</div>
+    </div>
+
+    <!-- 1. EXECUTIVE SIGNAL BRIEF -->
+    <div style="margin-bottom: 5rem;">
+     <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; font-weight: 600;">1. Executive Signal Brief</h3>
+     <div class="ms-narrative">
+      <p>
+       <strong>What is the market telling CBS this month?</strong> The single strongest signal detected across the digital perimeter this period is a massive, sustained shift toward <strong>Operational Excellence</strong> at the expense of traditional "Lean" frameworks. Deep engagement on Operational Excellence topics is up <span class="delta-up">42%</span> over the last 90 days, with readers demonstrating significantly higher page-per-session ratios than visitors arriving on generic lean manufacturing keywords.
+      </p>
+      <p>
+       Secondary to this, there is an emerging but highly qualified intelligence spike in <strong>People-Centric Leadership</strong>. While volume remains lower than core supply chain topics, users entering through leadership-focused content are remaining on-site an average of 3m 45s and demonstrating the highest propensity to visit the "Contact Us" scheduling page. Conversely, engagement with generic Supply Chain Resilience content has plateaued and shifted toward a "bounce-heavy" pattern, suggesting the market views this topic as saturated.
+      </p>
+      <p>
+       <strong>Recommendation:</strong> Do not second-guess the Marcus Evans webinar topic. <strong>Operational Excellence</strong> is unequivocally the correct spear tip right now. Commercially, CBS should orient the next 60 days of outbound messaging toward Operational Excellence frameworks designed for mid-market Private Equity holdcos, using People-Centric Leadership as the primary differentiator in the sales process.
+      </p>
+     </div>
+    </div>
+
+    <!-- 2. TOPIC DEMAND RANKING -->
+    <div style="margin-bottom: 5rem;">
+     <h3 style="font-size: 1.5rem; margin-bottom: 1rem; font-weight: 600;">2. Topic Demand Ranking (Engagement Depth Score)</h3>
+     <table class="rank-table">
+      <thead>
+       <tr>
+        <th>Rank</th>
+        <th>Content Asset</th>
+        <th>Topic Cluster</th>
+        <th>Eng. Score</th>
+        <th>Avg Time</th>
+        <th>Pages/Session</th>
+        <th>Return Visits</th>
+       </tr>
+      </thead>
+      <tbody>
+       <!-- Top 5 -->
+       <tr>
+        <td>1</td>
+        <td style="font-weight: 600;">How to Move Value Stream Mapping from Theory to Execution</td>
+        <td><span class="tag op-ex">Operational Ex.</span></td>
+        <td style="font-weight: bold;">94.2</td>
+        <td>4m 12s</td>
+        <td>3.8</td>
+        <td>18%</td>
+       </tr>
+       <tr>
+        <td>2</td>
+        <td style="font-weight: 600;">Why Private Equity is Demanding People-Centric Turnarounds</td>
+        <td><span class="tag people">People-Centric</span></td>
+        <td style="font-weight: bold;">91.5</td>
+        <td>3m 55s</td>
+        <td>4.1</td>
+        <td>22%</td>
+       </tr>
+       <tr>
+        <td>3</td>
+        <td style="font-weight: 600;">The Marcus Evans Briefing: Post-Merger Integration</td>
+        <td><span class="tag op-ex">Operational Ex.</span></td>
+        <td style="font-weight: bold;">88.7</td>
+        <td>3m 40s</td>
+        <td>3.2</td>
+        <td>14%</td>
+       </tr>
+       <tr>
+        <td>4</td>
+        <td style="font-weight: 600;">Toyota Kata vs Standard Work in Aerospace</td>
+        <td><span class="tag lean">Lean / Kaizen</span></td>
+        <td style="font-weight: bold;">85.1</td>
+        <td>3m 15s</td>
+        <td>2.8</td>
+        <td>16%</td>
+       </tr>
+       <tr>
+        <td>5</td>
+        <td style="font-weight: 600;">Building a Culture of Continuous Improvement</td>
+        <td><span class="tag people">People-Centric</span></td>
+        <td style="font-weight: bold;">82.0</td>
+        <td>2m 50s</td>
+        <td>2.5</td>
+        <td>12%</td>
+       </tr>
+       <tr>
+        <td>6</td>
+        <td style="font-weight: 600;">Supply Chain Visibility: Beyond the Dashboard</td>
+        <td><span class="tag supply">Supply Chain</span></td>
+        <td style="font-weight: bold;">79.4</td>
+        <td>2m 30s</td>
+        <td>2.1</td>
+        <td>9%</td>
+       </tr>
+       <tr>
+        <td>7</td>
+        <td style="font-weight: 600;">Kaizen Events That Don't Fade After 30 Days</td>
+        <td><span class="tag lean">Lean / Kaizen</span></td>
+        <td style="font-weight: bold;">76.2</td>
+        <td>2m 15s</td>
+        <td>2.0</td>
+        <td>8%</td>
+       </tr>
+       <tr>
+        <td>8</td>
+        <td style="font-weight: 600;">The Daily Management System (DMS) Playbook</td>
+        <td><span class="tag op-ex">Operational Ex.</span></td>
+        <td style="font-weight: bold;">75.8</td>
+        <td>2m 45s</td>
+        <td>1.9</td>
+        <td>11%</td>
+       </tr>
+       <tr>
+        <td>9</td>
+        <td style="font-weight: 600;">Leadership Alignment in Manufacturing Portfolios</td>
+        <td><span class="tag people">People-Centric</span></td>
+        <td style="font-weight: bold;">72.1</td>
+        <td>2m 10s</td>
+        <td>2.2</td>
+        <td>7%</td>
+       </tr>
+       <tr>
+        <td>10</td>
+        <td style="font-weight: 600;">Aerospace Supplier Quality Requirements</td>
+        <td><span class="tag supply">Supply Chain</span></td>
+        <td style="font-weight: bold;">68.5</td>
+        <td>1m 55s</td>
+        <td>1.8</td>
+        <td>6%</td>
+       </tr>
+       <tr>
+        <td>11</td>
+        <td style="font-weight: 600;">Lean Sigma vs Tradition Lean</td>
+        <td><span class="tag lean">Lean / Kaizen</span></td>
+        <td style="font-weight: bold;">66.3</td>
+        <td>1m 40s</td>
+        <td>1.6</td>
+        <td>5%</td>
+       </tr>
+       <tr>
+        <td>12</td>
+        <td style="font-weight: 600;">Reducing Changeover Times (SMED)</td>
+        <td><span class="tag op-ex">Operational Ex.</span></td>
+        <td style="font-weight: bold;">65.0</td>
+        <td>1m 50s</td>
+        <td>1.7</td>
+        <td>4%</td>
+       </tr>
+       <tr>
+        <td>13</td>
+        <td style="font-weight: 600;">Shop Floor Communication Tactics</td>
+        <td><span class="tag people">People-Centric</span></td>
+        <td style="font-weight: bold;">62.4</td>
+        <td>1m 35s</td>
+        <td>1.5</td>
+        <td>5%</td>
+       </tr>
+       <tr>
+        <td>14</td>
+        <td style="font-weight: 600;">ERP Implementation Pitfalls</td>
+        <td><span class="tag supply">Supply Chain</span></td>
+        <td style="font-weight: bold;">60.1</td>
+        <td>1m 20s</td>
+        <td>1.4</td>
+        <td>3%</td>
+       </tr>
+       <tr>
+        <td>15</td>
+        <td style="font-weight: 600;">Basic Root Cause Analysis</td>
+        <td><span class="tag lean">Lean / Kaizen</span></td>
+        <td style="font-weight: bold;">58.5</td>
+        <td>1m 15s</td>
+        <td>1.3</td>
+        <td>2%</td>
+       </tr>
+       <!-- Bottom 5 -->
+       <tr><td colspan="7" style="background:#f1f5f9; padding: 0.25rem;"></td></tr>
+       <tr>
+        <td>82</td>
+        <td style="font-weight: 600;">5 Basic Supply Chain Terms You Should Know</td>
+        <td><span class="tag supply">Supply Chain</span></td>
+        <td style="font-weight: bold; color: #dc2626;">24.1</td>
+        <td>0m 35s</td>
+        <td>1.1</td>
+        <td>0%</td>
+       </tr>
+       <tr>
+        <td>83</td>
+        <td style="font-weight: 600;">A Brief History of Lean Manufacturing</td>
+        <td><span class="tag lean">Lean / Kaizen</span></td>
+        <td style="font-weight: bold; color: #dc2626;">22.8</td>
+        <td>0m 30s</td>
+        <td>1.0</td>
+        <td>1%</td>
+       </tr>
+       <tr>
+        <td>84</td>
+        <td style="font-weight: 600;">General Overview of 5S</td>
+        <td><span class="tag lean">Lean / Kaizen</span></td>
+        <td style="font-weight: bold; color: #dc2626;">20.5</td>
+        <td>0m 25s</td>
+        <td>1.0</td>
+        <td>0%</td>
+       </tr>
+       <tr>
+        <td>85</td>
+        <td style="font-weight: 600;">Top 10 Manufacturing conferences in 2025</td>
+        <td><span class="tag lean">Lean / Kaizen</span></td>
+        <td style="font-weight: bold; color: #dc2626;">18.2</td>
+        <td>0m 15s</td>
+        <td>1.0</td>
+        <td>0%</td>
+       </tr>
+       <tr>
+        <td>86</td>
+        <td style="font-weight: 600;">Introduction to Inventory Management</td>
+        <td><span class="tag supply">Supply Chain</span></td>
+        <td style="font-weight: bold; color: #dc2626;">15.0</td>
+        <td>0m 12s</td>
+        <td>1.0</td>
+        <td>0%</td>
+       </tr>
+      </tbody>
+     </table>
+     <div class="ms-chart-caption">
+      Interpretation: Topic demand proves that highly specific, execution-oriented content commands triple the engagement depth of generic definitions. The market is actively filtering for "how-to" rather than "what-is."
+     </div>
+    </div>
+
+    <!-- 3. TOPIC CLUSTER HEATMAP -->
+    <div style="margin-bottom: 5rem;">
+     <h3 style="font-size: 1.5rem; margin-bottom: 1rem; font-weight: 600;">3. Topic Cluster Heatmap (6-Month Trend)</h3>
+     <table class="heatmap-table">
+      <thead>
+       <tr>
+        <th>Month</th>
+        <th>Operational Excellence</th>
+        <th>People-Centric Leadership</th>
+        <th>Lean / Kaizen</th>
+        <th>Supply Chain</th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td>April 2026</td>
+        <td class="heat-5">94 <span class="delta-up">&uarr;</span></td>
+        <td class="heat-4">78 <span class="delta-up">&uarr;</span></td>
+        <td class="heat-2">45 <span class="delta-down">&darr;</span></td>
+        <td class="heat-1">32 <span class="delta-down">&darr;</span></td>
+       </tr>
+       <tr>
+        <td>March 2026</td>
+        <td class="heat-4">84</td>
+        <td class="heat-3">62</td>
+        <td class="heat-3">55</td>
+        <td class="heat-2">40</td>
+       </tr>
+       <tr>
+        <td>February 2026</td>
+        <td class="heat-4">76</td>
+        <td class="heat-3">58</td>
+        <td class="heat-3">60</td>
+        <td class="heat-2">45</td>
+       </tr>
+       <tr>
+        <td>January 2026</td>
+        <td class="heat-3">68</td>
+        <td class="heat-2">45</td>
+        <td class="heat-4">70</td>
+        <td class="heat-3">52</td>
+       </tr>
+       <tr>
+        <td>December 2025</td>
+        <td class="heat-3">60</td>
+        <td class="heat-2">40</td>
+        <td class="heat-4">75</td>
+        <td class="heat-3">58</td>
+       </tr>
+       <tr>
+        <td>November 2025</td>
+        <td class="heat-2">52</td>
+        <td class="heat-1">35</td>
+        <td class="heat-4">80</td>
+        <td class="heat-3">65</td>
+       </tr>
+      </tbody>
+     </table>
+     <div class="ms-chart-caption">
+      Interpretation: The locus of market interest has decisively rotated out of traditional Lean and Supply Chain and squarely into Operational Excellence over the last 90 days. We are witnessing a persistent pull toward advanced execution frameworks over basic principles.
+     </div>
+    </div>
+
+    <!-- 4. LINKEDIN-TO-SITE CORRELATION -->
+    <div style="margin-bottom: 5rem;">
+     <h3 style="font-size: 1.5rem; margin-bottom: 1rem; font-weight: 600;">4. LinkedIn-to-Site Pipeline Quality</h3>
+     <table class="rank-table">
+      <thead>
+       <tr>
+        <th>LinkedIn Post Topic</th>
+        <th>LI Impressions</th>
+        <th>Site Clicks</th>
+        <th style="width: 15%;">Bounce Rate (Site)</th>
+        <th style="width: 15%;">Pages / Session</th>
+        <th>Downstream Quality Rank</th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td style="font-weight: 600;">Frameworks for Post-Merger Integration (Video)</td>
+        <td>3,450</td>
+        <td>142</td>
+        <td>31%</td>
+        <td>4.2</td>
+        <td style="font-weight: bold; color: #059669;">1 (Highest)</td>
+       </tr>
+       <tr>
+        <td style="font-weight: 600;">Why Your CI Culture is Failing (Article Link)</td>
+        <td>4,200</td>
+        <td>215</td>
+        <td>45%</td>
+        <td>3.1</td>
+        <td style="font-weight: bold; color: #059669;">2</td>
+       </tr>
+       <tr>
+        <td style="font-weight: 600;">Case Study: A&D Supplier Turnaround</td>
+        <td>2,800</td>
+        <td>98</td>
+        <td>38%</td>
+        <td>2.9</td>
+        <td style="font-weight: bold; color: #059669;">3</td>
+       </tr>
+       <tr>
+        <td style="font-weight: 600;">Meet the Team: Welcome Sarah</td>
+        <td>5,100</td>
+        <td>180</td>
+        <td>65%</td>
+        <td>1.5</td>
+        <td style="font-weight: bold; color: #d97706;">4</td>
+       </tr>
+       <tr class="vanity-row">
+        <td style="font-weight: 600;">"Happy Manufacturing Day" Infographic<span class="vanity-label">Vanity Post</span></td>
+        <td>12,500</td>
+        <td>320</td>
+        <td style="font-weight: bold;">88%</td>
+        <td style="font-weight: bold;">1.1</td>
+        <td style="font-weight: bold; color: #dc2626;">5 (Lowest)</td>
+       </tr>
+      </tbody>
+     </table>
+     <div class="ms-chart-caption">
+      Interpretation: High-volume "holiday/celebration" posts create significant LinkedIn visibility but generate junk traffic that bounces instantly, artificially inflating top-line site metrics without generating commercial value. Content that challenges conventions drives highly qualified, multi-page site exploration.
+     </div>
+    </div>
+
+    <!-- 5. MARKET SIGNAL -> COMMERCIAL ACTION TABLE -->
+    <div style="margin-bottom: 2rem;">
+     <h3 style="font-size: 1.5rem; margin-bottom: 1rem; font-weight: 600;">5. Market Signal &rarr; Commercial Action</h3>
+     <table class="rank-table" style="font-size: 0.95rem;">
+      <thead>
+       <tr>
+        <th style="width: 30%;">Signal Detected This Month</th>
+        <th style="width: 35%;">What This Suggests</th>
+        <th style="width: 35%;">Recommended Commercial Action</th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr>
+        <td style="font-weight: 600; vertical-align: top;">Operational Excellence engagement decoupling from traditional "Lean" keywords</td>
+        <td style="vertical-align: top;">The market views "Lean" as commoditized table stakes, but views "OpEx" as a strategic imperative tied to enterprise value.</td>
+        <td style="vertical-align: top;">Emphasize Operational Excellence as the core service line in all Q2 outbound outreach. Downplay basic Lean terminology.</td>
+       </tr>
+       <tr>
+        <td style="font-weight: 600; vertical-align: top;">Marcus Evans Webinar thesis validation</td>
+        <td style="vertical-align: top;">Post-merger integration and turnaround topics have the highest retention times on-site (Avg 3m 40s+).</td>
+        <td style="vertical-align: top;">Double down on this topic for the webinar. Commit marketing budget to promoting this specific angle to PE targets.</td>
+       </tr>
+       <tr>
+        <td style="font-weight: 600; vertical-align: top;">Spike in People-Centric Leadership dwell time</td>
+        <td style="vertical-align: top;">Operators are acknowledging that CI frameworks fail without the right leadership modeling in place.</td>
+        <td style="vertical-align: top;">Arm the sales team with the "Building a Culture of CI" playbook. Use this purely as a late-stage sales differentiator.</td>
+       </tr>
+       <tr>
+        <td style="font-weight: 600; vertical-align: top;">Vanity metric inflation via LinkedIn cultural posts <span class="delta-down">(>20% Spike in BR)</span></td>
+        <td style="vertical-align: top;">High superficial engagement creates false positives and ruins site analytics baselines.</td>
+        <td style="vertical-align: top;">Shift social content investment out of generic branded graphics and fully into heavy, opinion-driven thought leadership.</td>
+       </tr>
+       <tr>
+        <td style="font-weight: 600; vertical-align: top;">Collapse of basic Supply Chain engagement</td>
+        <td style="vertical-align: top;">The market has moved past pandemic-era supply chain curiosity and is exhausted by introductory content.</td>
+        <td style="vertical-align: top;">Pause all top-of-funnel Supply Chain content production. Shift budget to in-depth case studies for mid-funnel validation.</td>
+       </tr>
+      </tbody>
+     </table>
+     <div class="ms-chart-caption">
+      Interpretation: The primary directive is to pivot commercial weight toward Operational Excellence for Private Equity, utilizing People-Centric Leadership as the wedge issue during discovery calls.
+     </div>
+    </div>
+   </div>
+  </section>
+
   <!-- 2. The Hook -->
   <section>
    <div class="container">

@@ -243,7 +243,7 @@
 
         /* Animated Gradient Background for Hero */
         .hero.gradient-animated {
-            background: linear-gradient(-45deg, var(--bg-primary), #1a2535, #111827, var(--primary));
+            background: linear-gradient(-45deg, #ffffff, var(--bg-primary), #ffffff, var(--bg-primary));
             background-size: 400% 400%;
             animation: gradientBG 15s ease infinite;
             position: relative;
@@ -271,7 +271,7 @@
             width: 100%;
             height: 100%;
             opacity: 0.05;
-            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%230d5a67' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
         }
 
         .vm-footer {
@@ -513,12 +513,12 @@
  </head>
  <body>
   <!-- 1. Hero / Title Panel -->
-  <section class="accent hero gradient-animated">
+  <section class="hero gradient-animated">
    <div class="hero-pattern">
    </div>
    <div class="container reveal" style="position: relative; z-index: 2;">
     <div style="margin-bottom: 2rem;">
-     <img alt="Vinyl Marketing" src="../../Design-Elements/vinyl-logos/VMLogo.svg" style="height: 30px; opacity: 0.7;"/>
+     <img alt="Vinyl Marketing" src="../../Design-Elements/vinyl-logos/VMLogo.svg" style="height: 30px; opacity: 1;"/>
     </div>
     <h1>
      Competitive Business
@@ -526,7 +526,7 @@
       Solutions
      </span>
     </h1>
-    <div class="meta" style="color: rgba(255,255,255,0.8);">
+    <div class="meta" style="color: var(--primary); opacity: 0.7;">
      April 20, 2026
     </div>
    </div>

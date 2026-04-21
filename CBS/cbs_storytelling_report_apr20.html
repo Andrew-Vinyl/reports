@@ -509,7 +509,7 @@
         .delta-up { color: #059669; font-weight: bold; }
         .delta-down { color: #dc2626; font-weight: bold; }
   </style>
- <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+ 
  </head>
  <body>
   <!-- 1. Hero / Title Panel -->
@@ -770,63 +770,147 @@
     <!-- 3. TOPIC CLUSTER TRENDS (CHART.JS) -->
     <div class="card glass reveal" style="padding: 3rem; margin-bottom: 2rem;">
      <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; font-weight: 600; color: var(--primary);">3. 90-Day Engagement Depth vs Search Impressions</h3>
-     <div style="width: 100%; height: 400px; margin-bottom: 1rem;">
-       <canvas id="signalsChart"></canvas>
-     </div>
-     <div style="background: #f8fafc; padding: 1.5rem; border-left: 4px solid var(--primary); font-size: 1.05rem; font-weight: 500; color: #334155;">
-      <strong>Strategic Takeaway:</strong> Highly specific, execution-oriented content around "Operational Excellence" and "Lean Sustainment" are commanding triple the engagement depth of generic definitions. The audience has decisively rotated toward advanced playbooks.
-     </div>
-     <script>
-       const ctx = document.getElementById('signalsChart').getContext('2d');
-       new Chart(ctx, {
-           type: 'bar',
-           data: {
-               labels: [
-                   'Agri-Business Consulting', 
-                   '5S Sustain / Ownership', 
-                   'PE Consulting & Value', 
-                   'Lean Mfg Consulting', 
-                   'Clear to Build / Supply Chain'
-               ],
-               datasets: [
-                   {
-                       label: 'Engagement Depth Score (GA4)',
-                       data: [82, 81, 54, 52, 60],
-                       backgroundColor: '#0369a1',
-                       yAxisID: 'y'
-                   },
-                   {
-                       type: 'line',
-                       label: 'Search Impressions (GSC)',
-                       data: [50, 120, 200, 1589, 815],
-                       borderColor: '#be185d',
-                       backgroundColor: '#fce7f3',
-                       borderWidth: 3,
-                       yAxisID: 'y1'
-                   }
-               ]
-           },
-           options: {
-               responsive: true,
-               maintainAspectRatio: false,
-               scales: {
-                   y: {
-                       type: 'linear',
-                       display: true,
-                       position: 'left',
-                       title: { display: true, text: 'Engagement Score' }
-                   },
-                   y1: {
-                       type: 'linear',
-                       display: true,
-                       position: 'right',
-                       grid: { drawOnChartArea: false },
-                       title: { display: true, text: 'Search Impressions' }
-                   }
-               }
-           }
-       });
-     </script>
+     
+      <style>
+      .metric-bars-container {
+          background: #ffffff;
+          border: 1px solid #e2e8f0;
+          border-radius: 12px;
+          padding: 2rem;
+          margin-bottom: 2rem;
+          box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+      }
+      .metric-bar-row {
+          margin-bottom: 2rem;
+      }
+      .metric-bar-row:last-child {
+          margin-bottom: 0;
+      }
+      .metric-bar-label {
+          font-size: 1.05rem;
+          font-weight: 600;
+          color: #0f172a;
+          margin-bottom: 0.75rem;
+          display: flex;
+          align-items: center;
+      }
+      .metric-bar-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 0.5rem;
+      }
+      .metric-bar-title {
+          width: 140px;
+          font-size: 0.8rem;
+          color: #64748b;
+          font-family: var(--font-mono);
+          text-transform: uppercase;
+          letter-spacing: 0.5px;
+      }
+      .metric-bar-track {
+          flex-grow: 1;
+          height: 10px;
+          background-color: #f1f5f9;
+          border-radius: 5px;
+          margin: 0 1rem;
+          overflow: hidden;
+      }
+      .metric-bar-fill {
+          height: 100%;
+          border-radius: 5px;
+      }
+      .fill-eng {
+          background: linear-gradient(90deg, #38bdf8, #0369a1);
+      }
+      .fill-imp {
+          background: linear-gradient(90deg, #f472b6, #be185d);
+      }
+      .metric-bar-value {
+          width: 60px;
+          text-align: right;
+          font-weight: 700;
+          font-size: 0.95rem;
+          color: #334155;
+      }
+      </style>
+
+      <div class="metric-bars-container">
+          <!-- Row 1 -->
+          <div class="metric-bar-row">
+              <div class="metric-bar-label">Agri-Business Consulting</div>
+              <div class="metric-bar-item">
+                  <div class="metric-bar-title" style="color: #0369a1;">Engagement Depth</div>
+                  <div class="metric-bar-track"><div class="metric-bar-fill fill-eng" style="width: 82%;"></div></div>
+                  <div class="metric-bar-value">82</div>
+              </div>
+              <div class="metric-bar-item">
+                  <div class="metric-bar-title" style="color: #be185d;">Search Impressions</div>
+                  <div class="metric-bar-track"><div class="metric-bar-fill fill-imp" style="width: 3%;"></div></div>
+                  <div class="metric-bar-value">50</div>
+              </div>
+          </div>
+          
+          <!-- Row 2 -->
+          <div class="metric-bar-row">
+              <div class="metric-bar-label">5S Sustain / Ownership</div>
+              <div class="metric-bar-item">
+                  <div class="metric-bar-title" style="color: #0369a1;">Engagement Depth</div>
+                  <div class="metric-bar-track"><div class="metric-bar-fill fill-eng" style="width: 81%;"></div></div>
+                  <div class="metric-bar-value">81</div>
+              </div>
+              <div class="metric-bar-item">
+                  <div class="metric-bar-title" style="color: #be185d;">Search Impressions</div>
+                  <div class="metric-bar-track"><div class="metric-bar-fill fill-imp" style="width: 7%;"></div></div>
+                  <div class="metric-bar-value">120</div>
+              </div>
+          </div>
+
+          <!-- Row 3 -->
+          <div class="metric-bar-row">
+              <div class="metric-bar-label">PE Consulting & Value Creation</div>
+              <div class="metric-bar-item">
+                  <div class="metric-bar-title" style="color: #0369a1;">Engagement Depth</div>
+                  <div class="metric-bar-track"><div class="metric-bar-fill fill-eng" style="width: 54%;"></div></div>
+                  <div class="metric-bar-value">54</div>
+              </div>
+              <div class="metric-bar-item">
+                  <div class="metric-bar-title" style="color: #be185d;">Search Impressions</div>
+                  <div class="metric-bar-track"><div class="metric-bar-fill fill-imp" style="width: 12%;"></div></div>
+                  <div class="metric-bar-value">200</div>
+              </div>
+          </div>
+
+          <!-- Row 4 -->
+          <div class="metric-bar-row">
+              <div class="metric-bar-label">Lean Mfg Consulting</div>
+              <div class="metric-bar-item">
+                  <div class="metric-bar-title" style="color: #0369a1;">Engagement Depth</div>
+                  <div class="metric-bar-track"><div class="metric-bar-fill fill-eng" style="width: 52%;"></div></div>
+                  <div class="metric-bar-value">52</div>
+              </div>
+              <div class="metric-bar-item">
+                  <div class="metric-bar-title" style="color: #be185d;">Search Impressions</div>
+                  <div class="metric-bar-track"><div class="metric-bar-fill fill-imp" style="width: 100%;"></div></div>
+                  <div class="metric-bar-value">1,589</div>
+              </div>
+          </div>
+
+          <!-- Row 5 -->
+          <div class="metric-bar-row">
+              <div class="metric-bar-label">Clear to Build / Supply Chain</div>
+              <div class="metric-bar-item">
+                  <div class="metric-bar-title" style="color: #0369a1;">Engagement Depth</div>
+                  <div class="metric-bar-track"><div class="metric-bar-fill fill-eng" style="width: 60%;"></div></div>
+                  <div class="metric-bar-value">60</div>
+              </div>
+              <div class="metric-bar-item">
+                  <div class="metric-bar-title" style="color: #be185d;">Search Impressions</div>
+                  <div class="metric-bar-track"><div class="metric-bar-fill fill-imp" style="width: 51%;"></div></div>
+                  <div class="metric-bar-value">815</div>
+              </div>
+          </div>
+      </div>
+
     </div>
    </div>
   </section>

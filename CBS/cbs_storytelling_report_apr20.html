@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-  <title>
-   Competitive Business Solutions - April 20, 2026
-  </title>
-  <link href="https://fonts.googleapis.com" rel="preconnect"/>
-  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap" rel="stylesheet"/>
-  <link href="../../Design-Elements/css/portal-style.css" rel="stylesheet"/>
-  <style>
-   /* Custom overrides for CBS if needed */
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+        Competitive Business Solutions - April 20, 2026
+    </title>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&amp;family=JetBrains+Mono:wght@400;700&amp;display=swap"
+        rel="stylesheet" />
+    <link href="../../Design-Elements/css/portal-style.css" rel="stylesheet" />
+    <style>
+        /* Custom overrides for CBS if needed */
         .positive-delta {
             background-color: var(--accent-teal);
         }
@@ -387,7 +390,7 @@
                 border-bottom: 4px solid var(--primary);
             }
 
-        .quadrant-row {
+            .quadrant-row {
                 flex-direction: column;
                 gap: 0.5rem;
             }
@@ -402,6 +405,7 @@
             padding-bottom: 5rem;
             font-family: var(--font-sans);
         }
+
         .ms-header {
             font-family: var(--font-mono);
             text-transform: uppercase;
@@ -412,6 +416,7 @@
             border-bottom: 1px solid #e2e8f0;
             padding-bottom: 0.5rem;
         }
+
         .ms-narrative p {
             font-size: 1.15rem;
             line-height: 1.7;
@@ -419,6 +424,7 @@
             color: #1e293b;
             max-width: 800px;
         }
+
         .ms-chart-caption {
             font-size: 0.85rem;
             color: #475569;
@@ -428,12 +434,14 @@
             border-left: 3px solid var(--accent-teal);
             padding-left: 1rem;
         }
+
         .rank-table {
             width: 100%;
             border-collapse: collapse;
             font-size: 0.9rem;
             margin-bottom: 1rem;
         }
+
         .rank-table th {
             text-align: left;
             padding: 0.75rem 1rem;
@@ -443,11 +451,13 @@
             color: #64748b;
             border-bottom: 2px solid #cbd5e1;
         }
+
         .rank-table td {
             padding: 0.75rem 1rem;
             border-bottom: 1px solid #e2e8f0;
             color: #334155;
         }
+
         .tag {
             display: inline-block;
             padding: 0.2rem 0.5rem;
@@ -457,10 +467,26 @@
             background-color: #e2e8f0;
             color: #475569;
         }
-        .tag.op-ex { background-color: #e0f2fe; color: #0369a1; }
-        .tag.lean { background-color: #f1f5f9; color: #475569; }
-        .tag.supply { background-color: #fef3c7; color: #b45309; }
-        .tag.people { background-color: #fce7f3; color: #be185d; }
+
+        .tag.op-ex {
+            background-color: #e0f2fe;
+            color: #0369a1;
+        }
+
+        .tag.lean {
+            background-color: #f1f5f9;
+            color: #475569;
+        }
+
+        .tag.supply {
+            background-color: #fef3c7;
+            color: #b45309;
+        }
+
+        .tag.people {
+            background-color: #fce7f3;
+            color: #be185d;
+        }
 
         .heatmap-table {
             width: 100%;
@@ -468,32 +494,57 @@
             font-size: 0.85rem;
             margin-bottom: 1rem;
         }
-        .heatmap-table th, .heatmap-table td {
+
+        .heatmap-table th,
+        .heatmap-table td {
             padding: 1rem;
             text-align: center;
             border: 1px solid #fff;
         }
+
         .heatmap-table th {
             background-color: #f8fafc;
             color: #475569;
             font-family: var(--font-mono);
             font-weight: 600;
         }
+
         .heatmap-table td:first-child {
             text-align: left;
             font-weight: 600;
             background-color: #f8fafc;
             color: #475569;
         }
-        .heat-5 { background-color: #0c4a6e; color: white; }
-        .heat-4 { background-color: #0284c7; color: white; }
-        .heat-3 { background-color: #7dd3fc; color: #0c4a6e; }
-        .heat-2 { background-color: #e0f2fe; color: #0c4a6e; }
-        .heat-1 { background-color: #f1f5f9; color: #64748b; }
+
+        .heat-5 {
+            background-color: #0c4a6e;
+            color: white;
+        }
+
+        .heat-4 {
+            background-color: #0284c7;
+            color: white;
+        }
+
+        .heat-3 {
+            background-color: #7dd3fc;
+            color: #0c4a6e;
+        }
+
+        .heat-2 {
+            background-color: #e0f2fe;
+            color: #0c4a6e;
+        }
+
+        .heat-1 {
+            background-color: #f1f5f9;
+            color: #64748b;
+        }
 
         .vanity-row {
             background-color: #fff1f2;
         }
+
         .vanity-label {
             background-color: #fda4af;
             color: #881337;
@@ -506,2024 +557,2107 @@
             text-transform: uppercase;
         }
 
-        .delta-up { color: #059669; font-weight: bold; }
-        .delta-down { color: #dc2626; font-weight: bold; }
-  </style>
- 
- </head>
- <body>
-  <!-- 1. Hero / Title Panel -->
-  <section class="hero gradient-animated">
-   <div class="hero-pattern">
-   </div>
-   <div class="container reveal" style="position: relative; z-index: 2;">
-    <div style="margin-bottom: 2rem;">
-     <img alt="Vinyl Marketing" src="../../Design-Elements/vinyl-logos/VMLogo.svg" style="height: 30px; opacity: 1;"/>
-    </div>
-    <h1>
-     Competitive Business
-     <span>
-      Solutions
-     </span>
-    </h1>
-    <div class="meta" style="color: var(--primary); opacity: 0.7;">
-     April 20, 2026
-    </div>
-   </div>
-  </section>
+        .delta-up {
+            color: #059669;
+            font-weight: bold;
+        }
 
-  <!-- MARKET SIGNALS SECTION -->
-  <section class="market-signals" style="background-color: var(--bg-primary); padding-top: 5rem; padding-bottom: 5rem;">
-   <div class="container">
-    <div style="margin-bottom: 3rem;" class="reveal">
-     <h2 style="font-size: 2.5rem; color: var(--primary); margin-bottom: 0.5rem;">Market Signals Briefing</h2>
-     <div style="font-family: var(--font-mono); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 2px; color: #64748b; margin-bottom: 1rem; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.5rem;">
-      Analysis Period: Jan 20 - Apr 20, 2026 | Source: GA4 & GSC (90-Day View)
-     </div>
-    </div>
+        .delta-down {
+            color: #dc2626;
+            font-weight: bold;
+        }
+    </style>
 
-    <!-- 1. EXECUTIVE SIGNAL BRIEF -->
-    <div class="card glass reveal" style="padding: 3rem; margin-bottom: 3rem;">
-     <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; font-weight: 600; color: var(--primary);">1. Executive Signal Brief</h3>
-     <div class="ms-narrative">
-      <ul style="padding-left: 1.5rem; font-size: 1.15rem; line-height: 1.6; color: #334155;">
-        <li style="margin-bottom: 1rem;"><strong>The Dominant Signal (Supply Chain Specifics):</strong> The market is actively searching for highly specific frameworks. Search queries surrounding exactly what <em>"Clear to Build"</em> means in the supply chain generated over 1,000+ non-branded impressions and top clicks over the last 90 days in Google Search Console.</li>
-        <li style="margin-bottom: 1rem;"><strong>The Emerging Signal (Alignment & KPIs):</strong> Extremely long-tail, high-intent questions like <em>"what key performance indicators should organizations prioritize to ensure alignment"</em> are suddenly driving highly qualified clicks. This perfectly mirrors Google Analytics: articles on "Ownership" and "Clarity & Discipline" are holding attention for <strong>over 5 minutes</strong>.</li>
-        <li style="margin-bottom: 1.5rem;"><strong>The Stagnant Signal (Generic Theory):</strong> Generic top-of-funnel content (e.g. "Navigating High Interest Rates") is suffering from massive bounce rates (>85%) and sub-20 second abandonments. The market doesn't want theory; they want exact implementation playbooks.</li>
-      </ul>
-      <div style="background: #f8fafc; padding: 1.5rem; border-left: 4px solid var(--primary); margin-top: 2rem;">
-          <p style="margin: 0; font-size: 1.15rem; color: #1e293b;"><strong>Strategic Advisory:</strong> This intelligence strongly suggests that hyper-specific strategy methodologies (like "Clear to Build" or "5S Step Four") are acting as our absolute strongest wedge—far more than broad industry pages. Integrate these specific terms into Q2 outbound outreach.</p>
-      </div>
-     </div>
-    </div>
+</head>
 
-    <!-- 2. TOPIC DEMAND RANKING -->
-    <div class="card glass reveal" style="padding: 3rem; margin-bottom: 3rem;">
-     <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; font-weight: 600; color: var(--primary);">2. Topic Demand Ranking (Engagement Depth Score)</h3>
-     <div style="background: #f8fafc; padding: 1.5rem; margin-bottom: 2rem; border-left: 4px solid var(--primary);">
-         <h4 style="margin-top: 0; margin-bottom: 0.5rem; font-size: 1.1rem; color: var(--primary);">How to Read This Table:</h4>
-         <p style="margin: 0; font-size: 0.95rem; color: #334155;">Traditional dashboards rank by pure "Pageviews" (which rewards clickbait and bounces). This <strong>Engagement Score</strong> heavily weights <em>Time on Page</em> and <em>Pages-Per-Session</em> representing content that genuinely held executive attention long enough to build trust.</p>
-     </div>
-     <div class="data-table-wrapper">
-         <table style="width: 100%; font-size: 0.85rem;">
-          <thead>
-           <tr>
-            <th>Rank</th>
-            <th style="width: 40%;">Content Asset</th>
-            <th>Pattern</th>
-            <th>Eng. Score</th>
-            <th>Avg Time</th>
-            <th>Views</th>
-            <th>Bounce Rate</th>
-           </tr>
-          </thead>
-<tbody>
-       <!-- Top 10 by Engagement -->
-       <tr>
-        <td>1</td>
-        <td style="font-weight: 600;">Business Efficiency: Learn from Sports' Winning Strategies</td>
-        <td><span class="tag op-ex" style="white-space: nowrap;">High Eng.</span></td>
-        <td style="font-weight: bold; font-size: 1.1rem;">31.8</td>
-        <td style="white-space: nowrap;">2m 07s</td>
-        <td>17</td>
-        <td>42.9%</td>
-       </tr>
-       <tr>
-        <td>2</td>
-        <td style="font-weight: 600;">Private Equity Consulting Services & Implementation</td>
-        <td><span class="tag op-ex" style="white-space: nowrap;">High Eng.</span></td>
-        <td style="font-weight: bold; font-size: 1.1rem;">31.7</td>
-        <td style="white-space: nowrap;">2m 06s</td>
-        <td>35</td>
-        <td>30.3%</td>
-       </tr>
-       <tr>
-        <td>3</td>
-        <td style="font-weight: 600;">Pre-Admission Testing Reduces Surgery Cancellations</td>
-        <td><span class="tag op-ex" style="white-space: nowrap;">High Eng.</span></td>
-        <td style="font-weight: bold; font-size: 1.1rem;">27.2</td>
-        <td style="white-space: nowrap;">1m 48s</td>
-        <td>57</td>
-        <td>39.3%</td>
-       </tr>
-       <tr>
-        <td>4</td>
-        <td style="font-weight: 600;">Continuous Improvement Consulting Services & Implementation</td>
-        <td><span class="tag op-ex" style="white-space: nowrap;">High Eng.</span></td>
-        <td style="font-weight: bold; font-size: 1.1rem;">23.3</td>
-        <td style="white-space: nowrap;">1m 33s</td>
-        <td>30</td>
-        <td>30.4%</td>
-       </tr>
-       <tr>
-        <td>5</td>
-        <td style="font-weight: 600;">Lean Practices: Cultural Shift for Success</td>
-        <td><span class="tag op-ex" style="white-space: nowrap;">High Eng.</span></td>
-        <td style="font-weight: bold; font-size: 1.1rem;">20.8</td>
-        <td style="white-space: nowrap;">1m 23s</td>
-        <td>24</td>
-        <td>66.7%</td>
-       </tr>
-       <tr>
-        <td>6</td>
-        <td style="font-weight: 600;">Why "Clear to Build" Is Critical for Operational Excellence</td>
-        <td><span class="tag op-ex" style="white-space: nowrap;">High Eng.</span></td>
-        <td style="font-weight: bold; font-size: 1.1rem;">15.6</td>
-        <td style="white-space: nowrap;">1m 02s</td>
-        <td>73</td>
-        <td>53.9%</td>
-       </tr>
-       <tr>
-        <td>7</td>
-        <td style="font-weight: 600;">5S Sustain: How Ownership Makes Lean Last Insights</td>
-        <td><span class="tag op-ex" style="white-space: nowrap;">High Eng.</span></td>
-        <td style="font-weight: bold; font-size: 1.1rem;">15.4</td>
-        <td style="white-space: nowrap;">1m 01s</td>
-        <td>32</td>
-        <td>31.6%</td>
-       </tr>
-       <tr>
-        <td>8</td>
-        <td style="font-weight: 600;">Aerospace and Defense Manufacturing Consulting Insights</td>
-        <td><span class="tag op-ex" style="white-space: nowrap;">High Eng.</span></td>
-        <td style="font-weight: bold; font-size: 1.1rem;">15.3</td>
-        <td style="white-space: nowrap;">1m 01s</td>
-        <td>24</td>
-        <td>48.0%</td>
-       </tr>
-       <tr>
-        <td>9</td>
-        <td style="font-weight: 600;">Lean Manufacturing Is Not a Toolbox, It’s a System</td>
-        <td><span class="tag lean" style="white-space: nowrap;">Low Eng.</span></td>
-        <td style="font-weight: bold; font-size: 1.1rem;">13.1</td>
-        <td style="white-space: nowrap;">0m 52s</td>
-        <td>22</td>
-        <td>86.4%</td>
-       </tr>
-       <tr>
-        <td>10</td>
-        <td style="font-weight: 600;">Metrics that Matter: Aligning KPIs with Strategic Objectives</td>
-        <td><span class="tag lean" style="white-space: nowrap;">Low Eng.</span></td>
-        <td style="font-weight: bold; font-size: 1.1rem;">12.9</td>
-        <td style="white-space: nowrap;">0m 51s</td>
-        <td>53</td>
-        <td>51.9%</td>
-       </tr>
+<body>
+    <!-- 1. Hero / Title Panel -->
+    <section class="hero gradient-animated">
+        <div class="hero-pattern">
+        </div>
+        <div class="container reveal" style="position: relative; z-index: 2;">
+            <div style="margin-bottom: 2rem;">
+                <img alt="Vinyl Marketing" src="../../Design-Elements/vinyl-logos/VMLogo.svg"
+                    style="height: 30px; opacity: 1;" />
+            </div>
+            <h1>
+                Competitive Business
+                <span>
+                    Solutions
+                </span>
+            </h1>
+            <div class="meta" style="color: var(--primary); opacity: 0.7;">
+                April 20, 2026
+            </div>
+        </div>
+    </section>
+
+    <!-- MARKET SIGNALS SECTION -->
+    <section class="market-signals"
+        style="background-color: var(--bg-primary); padding-top: 5rem; padding-bottom: 5rem;">
+        <div class="container">
+            <div style="margin-bottom: 3rem;" class="reveal">
+                <h2 style="font-size: 2.5rem; color: var(--primary); margin-bottom: 0.5rem;">Market Signals Briefing
+                </h2>
+                <div
+                    style="font-family: var(--font-mono); text-transform: uppercase; font-size: 0.85rem; letter-spacing: 2px; color: #64748b; margin-bottom: 1rem; border-bottom: 1px solid #e2e8f0; padding-bottom: 0.5rem;">
+                    Analysis Period: Jan 20 - Apr 20, 2026 | Source: GA4 & GSC (90-Day View)
+                </div>
+            </div>
+
+            <!-- 1. EXECUTIVE SIGNAL BRIEF -->
+            <div class="card glass reveal" style="padding: 3rem; margin-bottom: 3rem;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; font-weight: 600; color: var(--primary);">1.
+                    Executive Signal Brief</h3>
+                <div class="ms-narrative">
+                    <ul style="padding-left: 1.5rem; font-size: 1.15rem; line-height: 1.6; color: #334155;">
+                        <li style="margin-bottom: 1rem;"><strong>The Dominant Signal (Supply Chain Specifics):</strong>
+                            The market is actively searching for highly specific frameworks. Search queries surrounding
+                            exactly what <em>"Clear to Build"</em> means in the supply chain generated over 1,000+
+                            non-branded impressions and top clicks over the last 90 days in Google Search Console.</li>
+                        <li style="margin-bottom: 1rem;"><strong>The Emerging Signal (Alignment & KPIs):</strong>
+                            Extremely long-tail, high-intent questions like <em>"what key performance indicators should
+                                organizations prioritize to ensure alignment"</em> are suddenly driving highly qualified
+                            clicks. This perfectly mirrors Google Analytics: articles on "Ownership" and "Clarity &
+                            Discipline" are holding attention for <strong>over 5 minutes</strong>.</li>
+                        <li style="margin-bottom: 1.5rem;"><strong>The Stagnant Signal (Generic Theory):</strong>
+                            Generic top-of-funnel content (e.g. "Navigating High Interest Rates") is suffering from
+                            massive bounce rates (>85%) and sub-20 second abandonments. The market doesn't want theory;
+                            they want exact implementation playbooks.</li>
+                    </ul>
+                    <div
+                        style="background: #f8fafc; padding: 1.5rem; border-left: 4px solid var(--primary); margin-top: 2rem;">
+                        <p style="margin: 0; font-size: 1.15rem; color: #1e293b;"><strong>Strategic Advisory:</strong>
+                            This intelligence strongly suggests that hyper-specific strategy methodologies (like "Clear
+                            to Build" or "5S Step Four") are acting as our absolute strongest wedge—far more than broad
+                            industry pages. Integrate these specific terms into Q2 outbound outreach.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. TOPIC DEMAND RANKING -->
+            <div class="card glass reveal" style="padding: 3rem; margin-bottom: 3rem;">
+                <h3 style="font-size: 1.5rem; margin-bottom: 1.5rem; font-weight: 600; color: var(--primary);">2. Topic
+                    Demand Ranking (Engagement Depth Score)</h3>
+                <div
+                    style="background: #f8fafc; padding: 1.5rem; margin-bottom: 2rem; border-left: 4px solid var(--primary);">
+                    <h4 style="margin-top: 0; margin-bottom: 0.5rem; font-size: 1.1rem; color: var(--primary);">How to
+                        Read This Table:</h4>
+                    <p style="margin: 0; font-size: 0.95rem; color: #334155;">Traditional dashboards rank by pure
+                        "Pageviews" (which rewards clickbait and bounces). This <strong>Engagement Score</strong>
+                        heavily weights <em>Time on Page</em> and <em>Pages-Per-Session</em> representing content that
+                        genuinely held executive attention long enough to build trust.</p>
+                </div>
+                <div class="data-table-wrapper">
+                    <table style="width: 100%; font-size: 0.85rem;">
+                        <thead>
+                            <tr>
+                                <th>Rank</th>
+                                <th style="width: 40%;">Content Asset</th>
+                                <th>Pattern</th>
+                                <th>Eng. Score</th>
+                                <th>Avg Time</th>
+                                <th>Views</th>
+                                <th>Bounce Rate</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Top 10 by Engagement -->
+                            <tr>
+                                <td>1</td>
+                                <td style="font-weight: 600;">Business Efficiency: Learn from Sports' Winning Strategies
+                                </td>
+                                <td><span class="tag op-ex" style="white-space: nowrap;">High Eng.</span></td>
+                                <td style="font-weight: bold; font-size: 1.1rem;">31.8</td>
+                                <td style="white-space: nowrap;">2m 07s</td>
+                                <td>17</td>
+                                <td>42.9%</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td style="font-weight: 600;">Private Equity Consulting Services & Implementation</td>
+                                <td><span class="tag op-ex" style="white-space: nowrap;">High Eng.</span></td>
+                                <td style="font-weight: bold; font-size: 1.1rem;">31.7</td>
+                                <td style="white-space: nowrap;">2m 06s</td>
+                                <td>35</td>
+                                <td>30.3%</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td style="font-weight: 600;">Pre-Admission Testing Reduces Surgery Cancellations</td>
+                                <td><span class="tag op-ex" style="white-space: nowrap;">High Eng.</span></td>
+                                <td style="font-weight: bold; font-size: 1.1rem;">27.2</td>
+                                <td style="white-space: nowrap;">1m 48s</td>
+                                <td>57</td>
+                                <td>39.3%</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td style="font-weight: 600;">Continuous Improvement Consulting Services &
+                                    Implementation</td>
+                                <td><span class="tag op-ex" style="white-space: nowrap;">High Eng.</span></td>
+                                <td style="font-weight: bold; font-size: 1.1rem;">23.3</td>
+                                <td style="white-space: nowrap;">1m 33s</td>
+                                <td>30</td>
+                                <td>30.4%</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td style="font-weight: 600;">Lean Practices: Cultural Shift for Success</td>
+                                <td><span class="tag op-ex" style="white-space: nowrap;">High Eng.</span></td>
+                                <td style="font-weight: bold; font-size: 1.1rem;">20.8</td>
+                                <td style="white-space: nowrap;">1m 23s</td>
+                                <td>24</td>
+                                <td>66.7%</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td style="font-weight: 600;">Why "Clear to Build" Is Critical for Operational
+                                    Excellence</td>
+                                <td><span class="tag op-ex" style="white-space: nowrap;">High Eng.</span></td>
+                                <td style="font-weight: bold; font-size: 1.1rem;">15.6</td>
+                                <td style="white-space: nowrap;">1m 02s</td>
+                                <td>73</td>
+                                <td>53.9%</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td style="font-weight: 600;">5S Sustain: How Ownership Makes Lean Last Insights</td>
+                                <td><span class="tag op-ex" style="white-space: nowrap;">High Eng.</span></td>
+                                <td style="font-weight: bold; font-size: 1.1rem;">15.4</td>
+                                <td style="white-space: nowrap;">1m 01s</td>
+                                <td>32</td>
+                                <td>31.6%</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td style="font-weight: 600;">Aerospace and Defense Manufacturing Consulting Insights
+                                </td>
+                                <td><span class="tag op-ex" style="white-space: nowrap;">High Eng.</span></td>
+                                <td style="font-weight: bold; font-size: 1.1rem;">15.3</td>
+                                <td style="white-space: nowrap;">1m 01s</td>
+                                <td>24</td>
+                                <td>48.0%</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td style="font-weight: 600;">Lean Manufacturing Is Not a Toolbox, It’s a System</td>
+                                <td><span class="tag lean" style="white-space: nowrap;">Low Eng.</span></td>
+                                <td style="font-weight: bold; font-size: 1.1rem;">13.1</td>
+                                <td style="white-space: nowrap;">0m 52s</td>
+                                <td>22</td>
+                                <td>86.4%</td>
+                            </tr>
+                            <tr>
+                                <td>10</td>
+                                <td style="font-weight: 600;">Metrics that Matter: Aligning KPIs with Strategic
+                                    Objectives</td>
+                                <td><span class="tag lean" style="white-space: nowrap;">Low Eng.</span></td>
+                                <td style="font-weight: bold; font-size: 1.1rem;">12.9</td>
+                                <td style="white-space: nowrap;">0m 51s</td>
+                                <td>53</td>
+                                <td>51.9%</td>
+                            </tr>
 
 
-       <!-- Bottom 10 Engagement Content (Drop Offs) -->
-       <tr><td colspan="7" style="background:#f1f5f9; padding: 0.25rem;"></td></tr>
-       <tr>
-        <td>41</td>
-        <td style="font-weight: 600; color: #94a3b8;">Supply Chain Consulting</td>
-        <td><span class="tag lean" style="white-space: nowrap;">Low Eng.</span></td>
-        <td style="font-weight: bold; color: #dc2626;">2.4</td>
-        <td style="color: #94a3b8;">0m 09s</td>
-        <td style="color: #94a3b8;">31</td>
-        <td style="color: #94a3b8;">38.2%</td>
-       </tr>
-       <tr>
-        <td>42</td>
-        <td style="font-weight: 600; color: #94a3b8;">The 5-Step Approach to Proactive Process Improvement</td>
-        <td><span class="tag lean" style="white-space: nowrap;">Low Eng.</span></td>
-        <td style="font-weight: bold; color: #dc2626;">2.0</td>
-        <td style="color: #94a3b8;">0m 07s</td>
-        <td style="color: #94a3b8;">90</td>
-        <td style="color: #94a3b8;">86.0%</td>
-       </tr>
-       <tr>
-        <td>43</td>
-        <td style="font-weight: 600; color: #94a3b8;">Elite Aerospace & Defense Consulting for World-Class Operations</td>
-        <td><span class="tag lean" style="white-space: nowrap;">Low Eng.</span></td>
-        <td style="font-weight: bold; color: #dc2626;">1.9</td>
-        <td style="color: #94a3b8;">0m 07s</td>
-        <td style="color: #94a3b8;">19</td>
-        <td style="color: #94a3b8;">9.5%</td>
-       </tr>
-       <tr>
-        <td>44</td>
-        <td style="font-weight: 600; color: #94a3b8;">Lean Management System: Why Mindset Comes Before Tools</td>
-        <td><span class="tag lean" style="white-space: nowrap;">Low Eng.</span></td>
-        <td style="font-weight: bold; color: #dc2626;">1.7</td>
-        <td style="color: #94a3b8;">0m 06s</td>
-        <td style="color: #94a3b8;">44</td>
-        <td style="color: #94a3b8;">70.7%</td>
-       </tr>
-       <tr>
-        <td>45</td>
-        <td style="font-weight: 600; color: #94a3b8;">Tools and Techniques for Effective Root Cause Analysis</td>
-        <td><span class="tag lean" style="white-space: nowrap;">Low Eng.</span></td>
-        <td style="font-weight: bold; color: #dc2626;">1.3</td>
-        <td style="color: #94a3b8;">0m 05s</td>
-        <td style="color: #94a3b8;">36</td>
-        <td style="color: #94a3b8;">81.8%</td>
-       </tr>
-       <tr>
-        <td>46</td>
-        <td style="font-weight: 600; color: #94a3b8;">Agri-Business Consulting</td>
-        <td><span class="tag lean" style="white-space: nowrap;">Low Eng.</span></td>
-        <td style="font-weight: bold; color: #dc2626;">1.3</td>
-        <td style="color: #94a3b8;">0m 05s</td>
-        <td style="color: #94a3b8;">18</td>
-        <td style="color: #94a3b8;">43.8%</td>
-       </tr>
-       <tr>
-        <td>47</td>
-        <td style="font-weight: 600; color: #94a3b8;">Beyond Advice: 25 Years of Action.</td>
-        <td><span class="tag lean" style="white-space: nowrap;">Low Eng.</span></td>
-        <td style="font-weight: bold; color: #dc2626;">1.0</td>
-        <td style="color: #94a3b8;">0m 03s</td>
-        <td style="color: #94a3b8;">935</td>
-        <td style="color: #94a3b8;">86.8%</td>
-       </tr>
-       <tr>
-        <td>48</td>
-        <td style="font-weight: 600; color: #94a3b8;">We Don't Make Cars Here - Continuous Improvement Opportunities</td>
-        <td><span class="tag lean" style="white-space: nowrap;">Low Eng.</span></td>
-        <td style="font-weight: bold; color: #dc2626;">0.8</td>
-        <td style="color: #94a3b8;">0m 03s</td>
-        <td style="color: #94a3b8;">19</td>
-        <td style="color: #94a3b8;">84.2%</td>
-       </tr>
-       <tr>
-        <td>49</td>
-        <td style="font-weight: 600; color: #94a3b8;">Private Equity Strategy Workshop</td>
-        <td><span class="tag lean" style="white-space: nowrap;">Low Eng.</span></td>
-        <td style="font-weight: bold; color: #dc2626;">0.6</td>
-        <td style="color: #94a3b8;">0m 02s</td>
-        <td style="color: #94a3b8;">42</td>
-        <td style="color: #94a3b8;">85.7%</td>
-       </tr>
-       <tr>
-        <td>50</td>
-        <td style="font-weight: 600; color: #94a3b8;">Maximizing Your Expertise with the Right Support</td>
-        <td><span class="tag lean" style="white-space: nowrap;">Low Eng.</span></td>
-        <td style="font-weight: bold; color: #dc2626;">0.1</td>
-        <td style="color: #94a3b8;">0m 00s</td>
-        <td style="color: #94a3b8;">74</td>
-        <td style="color: #94a3b8;">94.4%</td>
-       </tr>
-      </tbody>
-         </table>
-     </div>
-    </div>
+                            <!-- Bottom 10 Engagement Content (Drop Offs) -->
+                            <tr>
+                                <td colspan="7" style="background:#f1f5f9; padding: 0.25rem;"></td>
+                            </tr>
+                            <tr>
+                                <td>41</td>
+                                <td style="font-weight: 600; color: #94a3b8;">Supply Chain Consulting</td>
+                                <td><span class="tag lean" style="white-space: nowrap;">Low Eng.</span></td>
+                                <td style="font-weight: bold; color: #dc2626;">2.4</td>
+                                <td style="color: #94a3b8;">0m 09s</td>
+                                <td style="color: #94a3b8;">31</td>
+                                <td style="color: #94a3b8;">38.2%</td>
+                            </tr>
+                            <tr>
+                                <td>42</td>
+                                <td style="font-weight: 600; color: #94a3b8;">The 5-Step Approach to Proactive Process
+                                    Improvement</td>
+                                <td><span class="tag lean" style="white-space: nowrap;">Low Eng.</span></td>
+                                <td style="font-weight: bold; color: #dc2626;">2.0</td>
+                                <td style="color: #94a3b8;">0m 07s</td>
+                                <td style="color: #94a3b8;">90</td>
+                                <td style="color: #94a3b8;">86.0%</td>
+                            </tr>
+                            <tr>
+                                <td>43</td>
+                                <td style="font-weight: 600; color: #94a3b8;">Elite Aerospace & Defense Consulting for
+                                    World-Class Operations</td>
+                                <td><span class="tag lean" style="white-space: nowrap;">Low Eng.</span></td>
+                                <td style="font-weight: bold; color: #dc2626;">1.9</td>
+                                <td style="color: #94a3b8;">0m 07s</td>
+                                <td style="color: #94a3b8;">19</td>
+                                <td style="color: #94a3b8;">9.5%</td>
+                            </tr>
+                            <tr>
+                                <td>44</td>
+                                <td style="font-weight: 600; color: #94a3b8;">Lean Management System: Why Mindset Comes
+                                    Before Tools</td>
+                                <td><span class="tag lean" style="white-space: nowrap;">Low Eng.</span></td>
+                                <td style="font-weight: bold; color: #dc2626;">1.7</td>
+                                <td style="color: #94a3b8;">0m 06s</td>
+                                <td style="color: #94a3b8;">44</td>
+                                <td style="color: #94a3b8;">70.7%</td>
+                            </tr>
+                            <tr>
+                                <td>45</td>
+                                <td style="font-weight: 600; color: #94a3b8;">Tools and Techniques for Effective Root
+                                    Cause Analysis</td>
+                                <td><span class="tag lean" style="white-space: nowrap;">Low Eng.</span></td>
+                                <td style="font-weight: bold; color: #dc2626;">1.3</td>
+                                <td style="color: #94a3b8;">0m 05s</td>
+                                <td style="color: #94a3b8;">36</td>
+                                <td style="color: #94a3b8;">81.8%</td>
+                            </tr>
+                            <tr>
+                                <td>46</td>
+                                <td style="font-weight: 600; color: #94a3b8;">Agri-Business Consulting</td>
+                                <td><span class="tag lean" style="white-space: nowrap;">Low Eng.</span></td>
+                                <td style="font-weight: bold; color: #dc2626;">1.3</td>
+                                <td style="color: #94a3b8;">0m 05s</td>
+                                <td style="color: #94a3b8;">18</td>
+                                <td style="color: #94a3b8;">43.8%</td>
+                            </tr>
+                            <tr>
+                                <td>47</td>
+                                <td style="font-weight: 600; color: #94a3b8;">Beyond Advice: 25 Years of Action.</td>
+                                <td><span class="tag lean" style="white-space: nowrap;">Low Eng.</span></td>
+                                <td style="font-weight: bold; color: #dc2626;">1.0</td>
+                                <td style="color: #94a3b8;">0m 03s</td>
+                                <td style="color: #94a3b8;">935</td>
+                                <td style="color: #94a3b8;">86.8%</td>
+                            </tr>
+                            <tr>
+                                <td>48</td>
+                                <td style="font-weight: 600; color: #94a3b8;">We Don't Make Cars Here - Continuous
+                                    Improvement Opportunities</td>
+                                <td><span class="tag lean" style="white-space: nowrap;">Low Eng.</span></td>
+                                <td style="font-weight: bold; color: #dc2626;">0.8</td>
+                                <td style="color: #94a3b8;">0m 03s</td>
+                                <td style="color: #94a3b8;">19</td>
+                                <td style="color: #94a3b8;">84.2%</td>
+                            </tr>
+                            <tr>
+                                <td>49</td>
+                                <td style="font-weight: 600; color: #94a3b8;">Private Equity Strategy Workshop</td>
+                                <td><span class="tag lean" style="white-space: nowrap;">Low Eng.</span></td>
+                                <td style="font-weight: bold; color: #dc2626;">0.6</td>
+                                <td style="color: #94a3b8;">0m 02s</td>
+                                <td style="color: #94a3b8;">42</td>
+                                <td style="color: #94a3b8;">85.7%</td>
+                            </tr>
+                            <tr>
+                                <td>50</td>
+                                <td style="font-weight: 600; color: #94a3b8;">Maximizing Your Expertise with the Right
+                                    Support</td>
+                                <td><span class="tag lean" style="white-space: nowrap;">Low Eng.</span></td>
+                                <td style="font-weight: bold; color: #dc2626;">0.1</td>
+                                <td style="color: #94a3b8;">0m 00s</td>
+                                <td style="color: #94a3b8;">74</td>
+                                <td style="color: #94a3b8;">94.4%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
 
-   </div>
-  </section>
-  <!-- 2. The Hook -->
-  <section>
-   <div class="container">
-    <h2 class="reveal">
-     Progress in Visibility, Room for Engagement
-    </h2>
-    <p class="reveal" style="font-size: 1.5rem; margin-bottom: 3rem;">
-     We are seeing strong consistency in AI Overview rankings, which is highly encouraging despite the known volatility of these slots. Furthermore, our Aerospace and Defense page rollout adds essential structure for search engines. Our main challenge right now is keeping users engaged once they land on the site and converting that traffic into measurable leads (Bounce rate remains elevated).
-    </p>
-    <div class="grid grid-3">
-     <div class="metric reveal">
-      <span class="number">
-       &uarr;
-      </span>
-      <span class="label">
-       AI Overview
-      </span>
-      <span class="delta positive-delta">
-       Consistency Achieved
-      </span>
-     </div>
-     <div class="metric reveal negative-border">
-      <span class="number" style="color: var(--primary);">
-       65.83%
-      </span>
-      <span class="label">
-       Overall Bounce Rate
-      </span>
-      <span class="delta negative-delta">
-       High &mdash; Monitoring
-      </span>
-     </div>
-     <div class="metric reveal">
-      <span class="number" style="color: var(--primary);">
-       1m 28s
-      </span>
-      <span class="label">
-       Avg Session Duration
-      </span>
-      <span class="delta">
-       Engagement Focus
-      </span>
-     </div>
-    </div>
-   </div>
-  </section>
-  <!-- 3. Achievements (Keywords) -->
-  <section class="dark">
-   <div class="container">
-    <h2 class="reveal">
-     SEO Breakthroughs: Consistency &amp; Structure
-    </h2>
-    <p class="reveal" style="font-size: 1.25rem; margin-bottom: 2rem;">
-     Consistent appearances in Google's AI Overview provide a significant brand lift. Coupled with our new Aerospace and Defense structure, we're building a strong foundation for future growth.
-    </p>
-    <div class="data-table-wrapper reveal" style="max-height: 700px; overflow-y: auto;">
-     <table style="font-size: 0.85rem;">
-      <thead style="position: sticky; top: 0; z-index: 10;">
-       <tr>
-        <th>
-         Keyword
-        </th>
-        <th>
-         Dec 18, 2025
-        </th>
-        <th>
-         Apr 20, 2026
-        </th>
-        <th>
-         Apr 6, 2026
-        </th>
-        <th>
-         Mar 23, 2026
-        </th>
-        <th>
-         Mar 9, 2026
-        </th>
-        <th>
-         Feb 23, 2026
-        </th>
-        <th>
-         Feb 9, 2026
-        </th>
-        <th>
-         Difficulty
-        </th>
-       </tr>
-      </thead>
-      <tbody>
-       <tr style="background-color: #e8edf2;">
-        <td colspan="9" style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #64748b; padding: 0.6rem 1.5rem;">
-         Lean Manufacturing
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         Lean Manufacturing Consulting
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         19
-        </td>
-        <td>
-         1
-        </td>
-        <td>
-         10
-        </td>
-        <td>
-         7
-        </td>
-        <td>
-         16
-        </td>
-        <td>
-         15
-        </td>
-        <td>
-         27
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         lean management consultants
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         36
-        </td>
-        <td>
-         46
-        </td>
-        <td>
-         18
-        </td>
-        <td>
-         1
-        </td>
-        <td>
-         21
-        </td>
-        <td>
-         18
-        </td>
-        <td>
-         22
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         lean manufacturing consultants
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         29
-        </td>
-        <td>
-         2
-        </td>
-        <td>
-         23
-        </td>
-        <td>
-         20
-        </td>
-        <td>
-         1
-        </td>
-        <td>
-         100+
-        </td>
-        <td>
-         30
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         lean manufacturing consulting companies
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         24
-        </td>
-        <td>
-         26
-        </td>
-        <td>
-         22
-        </td>
-        <td>
-         10
-        </td>
-        <td>
-         34
-        </td>
-        <td>
-         16
-        </td>
-        <td>
-         19
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         Lean Manufacturing Consulting Firm
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         22
-        </td>
-        <td>
-         25
-        </td>
-        <td>
-         14
-        </td>
-        <td>
-         9
-        </td>
-        <td>
-         21
-        </td>
-        <td>
-         30
-        </td>
-        <td>
-         22
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         Lean manufacturing consulting services
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         1
-        </td>
-        <td>
-         1
-        </td>
-        <td>
-         1
-        </td>
-        <td>
-         13
-        </td>
-        <td>
-         15
-        </td>
-        <td>
-         17
-        </td>
-        <td>
-         14
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         lean manufacturing expert
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         32
-        </td>
-        <td>
-         16
-        </td>
-        <td>
-         12
-        </td>
-        <td>
-         11
-        </td>
-        <td>
-         25
-        </td>
-        <td>
-         23
-        </td>
-        <td>
-         14
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         lean manufacturing layout
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         35
-        </td>
-        <td>
-         100+
-        </td>
-        <td>
-         28
-        </td>
-        <td>
-         14
-        </td>
-        <td>
-         16
-        </td>
-        <td>
-         95
-        </td>
-        <td>
-         16
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         lean manufacturing operations consulting
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         100+
-        </td>
-        <td>
-         1
-        </td>
-        <td>
-         1
-        </td>
-        <td>
-         26
-        </td>
-        <td>
-         14
-        </td>
-        <td>
-         17
-        </td>
-        <td>
-         10
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         lean consulting impact
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         37
-        </td>
-        <td>
-         1
-        </td>
-        <td>
-         1
-        </td>
-        <td>
-         1
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         5s lean manufacturing
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-        </td>
-        <td>
-         29
-        </td>
-        <td>
-         100+
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         Lean manufacturing
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-       </tr>
-       <tr style="background-color: #f1f5f9; height: 16px;">
-        <td colspan="9">
-        </td>
-       </tr>
-       <tr style="background-color: #e8edf2;">
-        <td colspan="9" style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #64748b; padding: 0.6rem 1.5rem;">
-         Aerospace &amp; Defense
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         Aerospace and defense consulting
-        </td>
-        <td>
-         21
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         46
-        </td>
-        <td>
-         66
-        </td>
-        <td>
-         35
-        </td>
-        <td>
-         40
-        </td>
-        <td>
-         34
-        </td>
-        <td>
-         17
-        </td>
-        <td>
-         33
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         aerospace &amp; military consulting &amp; compliance
-        </td>
-        <td>
-         n/a
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         1
-        </td>
-        <td>
-         67
-        </td>
-        <td>
-         35
-        </td>
-        <td>
-         100+
-        </td>
-        <td>
-         44
-        </td>
-        <td>
-         23
-        </td>
-        <td>
-         4
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         Aerospace and defense consulting firms
-        </td>
-        <td>
-         39
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         100+
-        </td>
-        <td>
-         39
-        </td>
-        <td>
-         32
-        </td>
-        <td>
-         40
-        </td>
-        <td>
-         31
-        </td>
-        <td>
-         39
-        </td>
-        <td>
-         24
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         aerospace consulting companies
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         100+
-        </td>
-        <td>
-         61
-        </td>
-        <td>
-         100+
-        </td>
-        <td>
-         64
-        </td>
-        <td>
-         66
-        </td>
-        <td>
-         16
-        </td>
-        <td>
-         17
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         Aerospace defense consulting
-        </td>
-        <td>
-         24
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         100+
-        </td>
-        <td>
-         47
-        </td>
-        <td>
-         38
-        </td>
-        <td>
-         48
-        </td>
-        <td>
-         43
-        </td>
-        <td>
-         35
-        </td>
-        <td>
-         16
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         aerospace management consulting
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         51
-        </td>
-        <td>
-         35
-        </td>
-        <td>
-         26
-        </td>
-        <td>
-         42
-        </td>
-        <td>
-         35
-        </td>
-        <td>
-         100+
-        </td>
-        <td>
-         24
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         consulting aerospace
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         100+
-        </td>
-        <td>
-         44
-        </td>
-        <td>
-         39
-        </td>
-        <td>
-         56
-        </td>
-        <td>
-         48
-        </td>
-        <td>
-         100+
-        </td>
-        <td>
-         35
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         defense consulting companies
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         100+
-        </td>
-        <td>
-         100+
-        </td>
-        <td>
-         100+
-        </td>
-        <td>
-         66
-        </td>
-        <td>
-         68
-        </td>
-        <td>
-         100+
-        </td>
-        <td>
-         33
-        </td>
-       </tr>
-       <tr style="background-color: #f1f5f9; height: 16px;">
-        <td colspan="9">
-        </td>
-       </tr>
-       <tr style="background-color: #e8edf2;">
-        <td colspan="9" style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #64748b; padding: 0.6rem 1.5rem;">
-         Continuous Improvement
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         Continuous improvement
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         100+
-        </td>
-        <td>
-         100+
-        </td>
-        <td>
-         100+
-        </td>
-        <td>
-         100+
-        </td>
-        <td>
-         100+
-        </td>
-        <td>
-         100+
-        </td>
-        <td>
-         68
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         Continuous improvement consultant
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         50
-        </td>
-        <td>
-         22
-        </td>
-        <td>
-         31
-        </td>
-        <td>
-         1
-        </td>
-        <td>
-         13
-        </td>
-        <td>
-         17
-        </td>
-        <td>
-         3
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         Continuous improvement consulting
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         1
-        </td>
-        <td>
-         24
-        </td>
-        <td>
-         9
-        </td>
-        <td>
-         1
-        </td>
-        <td>
-         10
-        </td>
-        <td>
-         11
-        </td>
-        <td>
-         15
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         Continuous improvement consulting for enterprises
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         100+
-        </td>
-        <td>
-         1
-        </td>
-        <td>
-         1
-        </td>
-        <td>
-         1
-        </td>
-        <td>
-         I
-        </td>
-        <td>
-         8
-        </td>
-        <td>
-         10
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         Continuous improvement consulting services
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         1
-        </td>
-        <td>
-         1
-        </td>
-        <td>
-         1
-        </td>
-        <td>
-         1
-        </td>
-        <td>
-         10
-        </td>
-        <td>
-         9
-        </td>
-        <td>
-         16
-        </td>
-       </tr>
-       <tr style="background-color: #f1f5f9; height: 16px;">
-        <td colspan="9">
-        </td>
-       </tr>
-       <tr style="background-color: #e8edf2;">
-        <td colspan="9" style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #64748b; padding: 0.6rem 1.5rem;">
-         Operational Excellence
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         Operational excellence
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         100+
-        </td>
-        <td>
-         100+
-        </td>
-        <td>
-         100+
-        </td>
-        <td>
-         100+
-        </td>
-        <td>
-         100+
-        </td>
-        <td>
-         100+
-        </td>
-        <td>
-         46
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         operational excellence consultant
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         39
-        </td>
-        <td>
-         1
-        </td>
-        <td>
-         1
-        </td>
-        <td>
-         1
-        </td>
-        <td>
-         16
-        </td>
-        <td>
-         20
-        </td>
-        <td>
-         18
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         Operational excellence consultants
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         23
-        </td>
-        <td>
-         17
-        </td>
-        <td>
-         11
-        </td>
-        <td>
-         16
-        </td>
-        <td>
-         12
-        </td>
-        <td>
-         13
-        </td>
-        <td>
-         24
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         Operational excellence consulting
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         28
-        </td>
-        <td>
-         19
-        </td>
-        <td>
-         4
-        </td>
-        <td>
-         13
-        </td>
-        <td>
-         14
-        </td>
-        <td>
-         17
-        </td>
-        <td>
-         16
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         Operational excellence consulting firms
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         44
-        </td>
-        <td>
-         40
-        </td>
-        <td>
-         34
-        </td>
-        <td>
-         20
-        </td>
-        <td>
-         47
-        </td>
-        <td>
-         14
-        </td>
-        <td>
-         13
-        </td>
-       </tr>
-       <tr style="background-color: #f1f5f9; height: 16px;">
-        <td colspan="9">
-        </td>
-       </tr>
-       <tr style="background-color: #e8edf2;">
-        <td colspan="9" style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #64748b; padding: 0.6rem 1.5rem;">
-         Private Equity
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         Private equity consulting
-        </td>
-        <td>
-         66
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         100+
-        </td>
-        <td>
-         100+
-        </td>
-        <td>
-         100+
-        </td>
-        <td>
-         100+
-        </td>
-        <td>
-         100+
-        </td>
-        <td>
-         78
-        </td>
-        <td>
-         28
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         Private equity consultant
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         100+
-        </td>
-        <td>
-         45
-        </td>
-        <td>
-         44
-        </td>
-        <td>
-         75
-        </td>
-        <td>
-         72
-        </td>
-        <td>
-         62
-        </td>
-        <td>
-         19
-        </td>
-       </tr>
-       <tr style="background-color: #f1f5f9; height: 16px;">
-        <td colspan="9">
-        </td>
-       </tr>
-       <tr style="background-color: #e8edf2;">
-        <td colspan="9" style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #64748b; padding: 0.6rem 1.5rem;">
-         Other Keywords
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         Agri business consultant
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         33
-        </td>
-        <td>
-         25
-        </td>
-        <td>
-         1
-        </td>
-        <td>
-         23
-        </td>
-        <td>
-         15
-        </td>
-        <td>
-         26
-        </td>
-        <td>
-         29
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         Agri business consultants
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         34
-        </td>
-        <td>
-         17
-        </td>
-        <td>
-         19
-        </td>
-        <td>
-         34
-        </td>
-        <td>
-         15
-        </td>
-        <td>
-         13
-        </td>
-        <td>
-         32
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         change leadership consulting
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         32
-        </td>
-        <td>
-         13
-        </td>
-        <td>
-         1
-        </td>
-        <td>
-         8
-        </td>
-        <td>
-         25
-        </td>
-        <td>
-         11
-        </td>
-        <td>
-         10
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         manufacturing facility layout
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         24
-        </td>
-        <td>
-         8
-        </td>
-        <td>
-         8
-        </td>
-        <td>
-         9
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         visual management control systems
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         26
-        </td>
-        <td>
-         5
-        </td>
-        <td>
-         9
-        </td>
-        <td>
-         9
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         clear to build
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         3
-        </td>
-        <td>
-         3
-        </td>
-        <td>
-         3
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-       </tr>
-       <tr>
-        <td style="font-weight: 600;">
-         clear to build supply chain
-        </td>
-        <td>
-         100+
-        </td>
-        <td style="font-weight: 700; color: var(--secondary);">
-         4
-        </td>
-        <td>
-         5
-        </td>
-        <td>
-         4
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-        <td>
-        </td>
-       </tr>
-       <tr style="background-color: #f1f5f9; height: 16px;">
-        <td colspan="9">
-        </td>
-       </tr>
-      </tbody>
-     </table>
-    </div>
-    <div class="grid grid-2 mobile-stack" style="margin-top: 3rem;">
-     <div class="card glass highlight reveal" style="color: var(--primary);">
-      <h3>
-       SEO Rebound &amp; New Spoke Pages
-      </h3>
-      <p>
-       Aerospace and Defense consulting rankings are bouncing back strong following our strategic separation of "service" and "industry" pages. Additionally, we've successfully launched new high-intent spoke pages for Private Equity and Continuous Improvement by strategically repurposing evergreen blog content.
-      </p>
-     </div>
-     <div class="card glass reveal" style="color: var(--primary);">
-      <h3>
-       LinkedIn Audience Expansion
-      </h3>
-      <p>
-       Continued manual outreach is driving results. The CBS LinkedIn footprint has grown to
-       <strong>
-        2,203 followers
-       </strong>
-       (as of 4/20/2026), continuing to expand our organic reach.
-      </p>
-     </div>
-    </div>
-   </div>
-  </section>
-  <!-- 4. The Challenge (GA4 Data) -->
-  <section>
-   <div class="container">
-    <h2 class="reveal">
-     The Engagement Challenge
-    </h2>
-    <div class="grid grid-2 channel-performance-grid" style="align-items: center; gap: 4rem;">
-     <div class="reveal" style="display: flex; flex-direction: column; gap: 2rem; align-self: start; margin-top: 1.5rem;">
-      <p style="font-size: 1.8rem; line-height: 1.4; color: var(--primary);">
-       While we are driving more traffic, our Bounce Rate indicates we need better retention paths.
-      </p>
-      <div class="insight-card" style="background: white; padding: 3rem; border-radius: 16px; border-left: 10px solid var(--accent-blue); box-shadow: 0 20px 50px rgba(0,0,0,0.1); display: flex; flex-direction: column; justify-content: center; min-height: 250px;">
-       <h4 style="font-family: var(--font-mono); font-size: 1.3rem; color: var(--accent-blue); margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 1px;">
-        Latest GA4 Data (Last 30 Days)
-       </h4>
-       <ul style="margin: 0; padding-left: 1.5rem; font-size: 1.15rem; font-weight: 500; color: var(--primary); line-height: 1.6; display: flex; flex-direction: column; gap: 1rem;">
-        <li>
-         <strong>
-          Bounce Rate is still a focus:
-         </strong>
-         Overall bounce sits at 65.83%. Organic Search is performing better at 35.83%, compared to Paid Search at 46.98%.
-        </li>
-        <li>
-         <strong>
-          Session Duration:
-         </strong>
-         Average session duration is 1m 28s.
-        </li>
-       </ul>
-      </div>
-     </div>
-     <div class="reveal" style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%;">
-      <!-- Funnel Visualization -->
-      <div class="funnel-container">
-       <div class="funnel-stage fs-1">
-        <span class="funnel-label">
-         New Traffic Entering Site
-        </span>
-        <span class="funnel-sub">
-         SEO Rankings Supporting
-        </span>
-       </div>
-       <div class="funnel-stage fs-2">
-        <span class="funnel-label">
-         Content Engagement
-        </span>
-        <span class="funnel-sub" style="color: #ffb74d;">
-         High Bounce Rate
-        </span>
-       </div>
-       <div class="funnel-stage fs-3">
-        <span class="funnel-label">
-         Middle of Funnel
-        </span>
-        <span class="funnel-sub" style="color: #ff9800;">
-         Missing Pathways
-        </span>
-       </div>
-       <div class="funnel-stage fs-4">
-        <span class="funnel-label">
-         Lead
-         <br/>
-         Generation
-        </span>
-        <span class="funnel-sub" style="color: #d84315; font-weight: 700;">
-         Conversions
-         <br/>
-         Need Attention
-        </span>
-       </div>
-      </div>
-      <div style="margin-top: 2rem; text-align: center; color: var(--secondary); font-weight: bold; font-size: 1.2rem;">
-       Lead Generation tracking and optimization is the priority.
-      </div>
-     </div>
-    </div>
-   </div>
-  </section>
-  <!-- 5. Website Performance -->
-  <section class="dark">
-   <div class="container">
-    <h2 class="reveal">
-     Website Performance: Top Pages &amp; Reach
-    </h2>
-    <div class="grid grid-2" style="align-items: flex-start; gap: 4rem;">
-     <div class="reveal">
-      <p style="font-size: 1.25rem;">
-       During the March 8th &ndash; April 6th timeframe (30 days leading to report date), we recorded solid reach across our primary web properties.
-      </p>
-      <div class="card glass highlight" style="text-align: center; color: var(--primary); margin-top: 2rem;">
-       <div style="font-size: 4rem; font-weight: 700; color: var(--accent-blue); line-height: 1;">
-        1,182
-       </div>
-       <div style="font-size: 1.5rem; font-weight: 600; margin-top: 1rem;">
-        Total Unique Visitors
-       </div>
-       <div style="color: #64748b; margin-top: 0.5rem;">
-        March 8, 2026 - April 20, 2026
-       </div>
-      </div>
-     </div>
-     <div class="reveal">
-      <h3 style="font-family: var(--font-mono); font-size: 1.2rem; color: white; text-transform: uppercase;">
-       Top Viewed Pages
-      </h3>
-      <div class="data-table-wrapper" style="margin-top: 1rem;">
-       <table style="font-size: 0.85rem;">
-        <thead>
-         <tr>
-          <th>
-           Page Path
-          </th>
-          <th style="text-align: right;">
-           Views
-          </th>
-         </tr>
-        </thead>
-        <tbody>
-         <tr>
-          <td style="font-weight: 600; word-break: break-all;">
-           / (Home)
-          </td>
-          <td style="text-align: right;">
-           660
-          </td>
-         </tr>
-         <tr>
-          <td style="font-weight: 600; word-break: break-all;">
-           /contact-us/
-          </td>
-          <td style="text-align: right;">
-           138
-          </td>
-         </tr>
-         <tr>
-          <td style="font-weight: 600; word-break: break-all;">
-           /about/
-          </td>
-          <td style="text-align: right;">
-           102
-          </td>
-         </tr>
-         <tr>
-          <td style="font-weight: 600; word-break: break-all;">
-           /celebrating-25-years-of-cbs-a-legacy-of-hands-on-transformation/
-          </td>
-          <td style="text-align: right;">
-           98
-          </td>
-         </tr>
-         <tr>
-          <td style="font-weight: 600; word-break: break-all;">
-           /operational-excellence-insights/
-          </td>
-          <td style="text-align: right;">
-           63
-          </td>
-         </tr>
-         <tr>
-          <td style="font-weight: 600; word-break: break-all;">
-           /contact-us/thank-you/
-          </td>
-          <td style="text-align: right;">
-           52
-          </td>
-         </tr>
-         <tr>
-          <td style="font-weight: 600; word-break: break-all;">
-           /lean-consulting-services/
-          </td>
-          <td style="text-align: right;">
-           46
-          </td>
-         </tr>
-         <tr>
-          <td style="font-weight: 600; word-break: break-all;">
-           /maximizing-your-expertise-with-the-right-support/
-          </td>
-          <td style="text-align: right;">
-           28
-          </td>
-         </tr>
-         <tr>
-          <td style="font-weight: 600; word-break: break-all;">
-           /kpis-vs-metrics-sqdcp-performance-measurement/
-          </td>
-          <td style="text-align: right;">
-           27
-          </td>
-         </tr>
-         <tr>
-          <td style="font-weight: 600; word-break: break-all;">
-           /lean-consulting-services/operational-excellence-consulting-v2/
-          </td>
-          <td style="text-align: right;">
-           27
-          </td>
-         </tr>
-        </tbody>
-       </table>
-      </div>
-     </div>
-    </div>
-   </div>
-  </section>
-  <!-- 7. LinkedIn Progress -->
-  <section class="dark">
-   <div class="container">
-    <h2 class="reveal">
-     Social Growth: Consistent Network Building
-    </h2>
-    <div class="grid grid-2" style="align-items: center; gap: 4rem;">
-     <div class="reveal">
-      <p style="font-size: 1.25rem;">
-       Our content distribution and outreach are working in tandem to build a focused LinkedIn audience.
-      </p>
-      <ul style="font-size: 1.15rem; margin-top: 2rem; line-height: 1.6; padding-left: 1.5rem;">
-       <li style="margin-bottom: 1rem;">
-        <strong>
-         Follower Growth:
-        </strong>
-        Reached
-        <span style="color: var(--secondary); font-weight: bold;">
-         2,203 followers
-        </span>
-        (as of 4/20).
-       </li>
-       <li style="margin-bottom: 1rem;">
-        <strong>
-         Content Approvals Status:
-        </strong>
-        We ran out of approved content last week. Currently, there are 2 blogs and 1 video with Ed, and several pieces with consultants to work through the review and approval process. Additional content is in progress, but we’re at a temporary standstill on posting new content until approvals move forward. If Ed can prioritize the two blog reviews and video this week, it will help keep things moving. In the meantime, we will continue posting 3x/week by re-posting approved content we haven't shared more than once before.
-       </li>
-      </ul>
-     </div>
-     <div class="reveal card glass highlight" style="text-align: center; color: var(--primary);">
-      <div style="font-size: 4rem; font-weight: 700; color: var(--accent-blue); line-height: 1;">
-       2,203
-      </div>
-      <div style="font-size: 1.5rem; font-weight: 600; margin-top: 1rem;">
-       Total LinkedIn Followers
-      </div>
-      <div style="color: #64748b; margin-top: 0.5rem;">
-       Continuing to scale organically
-      </div>
-     </div>
-    </div>
-   </div>
-  </section>
+        </div>
+    </section>
+    <!-- 2. The Hook -->
+    <section>
+        <div class="container">
+            <h2 class="reveal">
+                Progress in Visibility, Room for Engagement
+            </h2>
+            <p class="reveal" style="font-size: 1.5rem; margin-bottom: 3rem;">
+                We are seeing strong consistency in AI Overview rankings, which is highly encouraging despite the known
+                volatility of these slots. Furthermore, our Aerospace and Defense page rollout adds essential structure
+                for search engines. Our main challenge right now is keeping users engaged once they land on the site and
+                converting that traffic into measurable leads (Bounce rate remains elevated).
+            </p>
+            <div class="grid grid-3">
+                <div class="metric reveal">
+                    <span class="number">
+                        &uarr;
+                    </span>
+                    <span class="label">
+                        AI Overview
+                    </span>
+                    <span class="delta positive-delta">
+                        Consistency Achieved
+                    </span>
+                </div>
+                <div class="metric reveal negative-border">
+                    <span class="number" style="color: var(--primary);">
+                        65.83%
+                    </span>
+                    <span class="label">
+                        Overall Bounce Rate
+                    </span>
+                    <span class="delta negative-delta">
+                        High &mdash; Monitoring
+                    </span>
+                </div>
+                <div class="metric reveal">
+                    <span class="number" style="color: var(--primary);">
+                        1m 28s
+                    </span>
+                    <span class="label">
+                        Avg Session Duration
+                    </span>
+                    <span class="delta">
+                        Engagement Focus
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 3. Achievements (Keywords) -->
+    <section class="dark">
+        <div class="container">
+            <h2 class="reveal">
+                SEO Breakthroughs: Consistency &amp; Structure
+            </h2>
+            <p class="reveal" style="font-size: 1.25rem; margin-bottom: 2rem;">
+                Consistent appearances in Google's AI Overview provide a significant brand lift. Coupled with our new
+                Aerospace and Defense structure, we're building a strong foundation for future growth.
+            </p>
+            <div class="data-table-wrapper reveal" style="max-height: 700px; overflow-y: auto;">
+                <table style="font-size: 0.85rem;">
+                    <thead style="position: sticky; top: 0; z-index: 10;">
+                        <tr>
+                            <th>
+                                Keyword
+                            </th>
+                            <th>
+                                Dec 18, 2025
+                            </th>
+                            <th>
+                                Apr 20, 2026
+                            </th>
+                            <th>
+                                Apr 6, 2026
+                            </th>
+                            <th>
+                                Mar 23, 2026
+                            </th>
+                            <th>
+                                Mar 9, 2026
+                            </th>
+                            <th>
+                                Feb 23, 2026
+                            </th>
+                            <th>
+                                Feb 9, 2026
+                            </th>
+                            <th>
+                                Difficulty
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background-color: #e8edf2;">
+                            <td colspan="9"
+                                style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #64748b; padding: 0.6rem 1.5rem;">
+                                Lean Manufacturing
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                Lean Manufacturing Consulting
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                19
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                10
+                            </td>
+                            <td>
+                                7
+                            </td>
+                            <td>
+                                16
+                            </td>
+                            <td>
+                                15
+                            </td>
+                            <td>
+                                27
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                lean management consultants
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                36
+                            </td>
+                            <td>
+                                46
+                            </td>
+                            <td>
+                                18
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                21
+                            </td>
+                            <td>
+                                18
+                            </td>
+                            <td>
+                                22
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                lean manufacturing consultants
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                29
+                            </td>
+                            <td>
+                                2
+                            </td>
+                            <td>
+                                23
+                            </td>
+                            <td>
+                                20
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td>
+                                30
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                lean manufacturing consulting companies
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                24
+                            </td>
+                            <td>
+                                26
+                            </td>
+                            <td>
+                                22
+                            </td>
+                            <td>
+                                10
+                            </td>
+                            <td>
+                                34
+                            </td>
+                            <td>
+                                16
+                            </td>
+                            <td>
+                                19
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                Lean Manufacturing Consulting Firm
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                22
+                            </td>
+                            <td>
+                                25
+                            </td>
+                            <td>
+                                14
+                            </td>
+                            <td>
+                                9
+                            </td>
+                            <td>
+                                21
+                            </td>
+                            <td>
+                                30
+                            </td>
+                            <td>
+                                22
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                Lean manufacturing consulting services
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                1
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                13
+                            </td>
+                            <td>
+                                15
+                            </td>
+                            <td>
+                                17
+                            </td>
+                            <td>
+                                14
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                lean manufacturing expert
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                32
+                            </td>
+                            <td>
+                                16
+                            </td>
+                            <td>
+                                12
+                            </td>
+                            <td>
+                                11
+                            </td>
+                            <td>
+                                25
+                            </td>
+                            <td>
+                                23
+                            </td>
+                            <td>
+                                14
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                lean manufacturing layout
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                35
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td>
+                                28
+                            </td>
+                            <td>
+                                14
+                            </td>
+                            <td>
+                                16
+                            </td>
+                            <td>
+                                95
+                            </td>
+                            <td>
+                                16
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                lean manufacturing operations consulting
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                100+
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                26
+                            </td>
+                            <td>
+                                14
+                            </td>
+                            <td>
+                                17
+                            </td>
+                            <td>
+                                10
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                lean consulting impact
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                37
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                5s lean manufacturing
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                            </td>
+                            <td>
+                                29
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                Lean manufacturing
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr style="background-color: #f1f5f9; height: 16px;">
+                            <td colspan="9">
+                            </td>
+                        </tr>
+                        <tr style="background-color: #e8edf2;">
+                            <td colspan="9"
+                                style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #64748b; padding: 0.6rem 1.5rem;">
+                                Aerospace &amp; Defense
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                Aerospace and defense consulting
+                            </td>
+                            <td>
+                                21
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                46
+                            </td>
+                            <td>
+                                66
+                            </td>
+                            <td>
+                                35
+                            </td>
+                            <td>
+                                40
+                            </td>
+                            <td>
+                                34
+                            </td>
+                            <td>
+                                17
+                            </td>
+                            <td>
+                                33
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                aerospace &amp; military consulting &amp; compliance
+                            </td>
+                            <td>
+                                n/a
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                1
+                            </td>
+                            <td>
+                                67
+                            </td>
+                            <td>
+                                35
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td>
+                                44
+                            </td>
+                            <td>
+                                23
+                            </td>
+                            <td>
+                                4
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                Aerospace and defense consulting firms
+                            </td>
+                            <td>
+                                39
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                100+
+                            </td>
+                            <td>
+                                39
+                            </td>
+                            <td>
+                                32
+                            </td>
+                            <td>
+                                40
+                            </td>
+                            <td>
+                                31
+                            </td>
+                            <td>
+                                39
+                            </td>
+                            <td>
+                                24
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                aerospace consulting companies
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                100+
+                            </td>
+                            <td>
+                                61
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td>
+                                64
+                            </td>
+                            <td>
+                                66
+                            </td>
+                            <td>
+                                16
+                            </td>
+                            <td>
+                                17
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                Aerospace defense consulting
+                            </td>
+                            <td>
+                                24
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                100+
+                            </td>
+                            <td>
+                                47
+                            </td>
+                            <td>
+                                38
+                            </td>
+                            <td>
+                                48
+                            </td>
+                            <td>
+                                43
+                            </td>
+                            <td>
+                                35
+                            </td>
+                            <td>
+                                16
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                aerospace management consulting
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                51
+                            </td>
+                            <td>
+                                35
+                            </td>
+                            <td>
+                                26
+                            </td>
+                            <td>
+                                42
+                            </td>
+                            <td>
+                                35
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td>
+                                24
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                consulting aerospace
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                100+
+                            </td>
+                            <td>
+                                44
+                            </td>
+                            <td>
+                                39
+                            </td>
+                            <td>
+                                56
+                            </td>
+                            <td>
+                                48
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td>
+                                35
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                defense consulting companies
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                100+
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td>
+                                66
+                            </td>
+                            <td>
+                                68
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td>
+                                33
+                            </td>
+                        </tr>
+                        <tr style="background-color: #f1f5f9; height: 16px;">
+                            <td colspan="9">
+                            </td>
+                        </tr>
+                        <tr style="background-color: #e8edf2;">
+                            <td colspan="9"
+                                style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #64748b; padding: 0.6rem 1.5rem;">
+                                Continuous Improvement
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                Continuous improvement
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                100+
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td>
+                                68
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                Continuous improvement consultant
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                50
+                            </td>
+                            <td>
+                                22
+                            </td>
+                            <td>
+                                31
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                13
+                            </td>
+                            <td>
+                                17
+                            </td>
+                            <td>
+                                3
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                Continuous improvement consulting
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                1
+                            </td>
+                            <td>
+                                24
+                            </td>
+                            <td>
+                                9
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                10
+                            </td>
+                            <td>
+                                11
+                            </td>
+                            <td>
+                                15
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                Continuous improvement consulting for enterprises
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                100+
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                I
+                            </td>
+                            <td>
+                                8
+                            </td>
+                            <td>
+                                10
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                Continuous improvement consulting services
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                1
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                10
+                            </td>
+                            <td>
+                                9
+                            </td>
+                            <td>
+                                16
+                            </td>
+                        </tr>
+                        <tr style="background-color: #f1f5f9; height: 16px;">
+                            <td colspan="9">
+                            </td>
+                        </tr>
+                        <tr style="background-color: #e8edf2;">
+                            <td colspan="9"
+                                style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #64748b; padding: 0.6rem 1.5rem;">
+                                Operational Excellence
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                Operational excellence
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                100+
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td>
+                                46
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                operational excellence consultant
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                39
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                16
+                            </td>
+                            <td>
+                                20
+                            </td>
+                            <td>
+                                18
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                Operational excellence consultants
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                23
+                            </td>
+                            <td>
+                                17
+                            </td>
+                            <td>
+                                11
+                            </td>
+                            <td>
+                                16
+                            </td>
+                            <td>
+                                12
+                            </td>
+                            <td>
+                                13
+                            </td>
+                            <td>
+                                24
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                Operational excellence consulting
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                28
+                            </td>
+                            <td>
+                                19
+                            </td>
+                            <td>
+                                4
+                            </td>
+                            <td>
+                                13
+                            </td>
+                            <td>
+                                14
+                            </td>
+                            <td>
+                                17
+                            </td>
+                            <td>
+                                16
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                Operational excellence consulting firms
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                44
+                            </td>
+                            <td>
+                                40
+                            </td>
+                            <td>
+                                34
+                            </td>
+                            <td>
+                                20
+                            </td>
+                            <td>
+                                47
+                            </td>
+                            <td>
+                                14
+                            </td>
+                            <td>
+                                13
+                            </td>
+                        </tr>
+                        <tr style="background-color: #f1f5f9; height: 16px;">
+                            <td colspan="9">
+                            </td>
+                        </tr>
+                        <tr style="background-color: #e8edf2;">
+                            <td colspan="9"
+                                style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #64748b; padding: 0.6rem 1.5rem;">
+                                Private Equity
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                Private equity consulting
+                            </td>
+                            <td>
+                                66
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                100+
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td>
+                                78
+                            </td>
+                            <td>
+                                28
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                Private equity consultant
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                100+
+                            </td>
+                            <td>
+                                45
+                            </td>
+                            <td>
+                                44
+                            </td>
+                            <td>
+                                75
+                            </td>
+                            <td>
+                                72
+                            </td>
+                            <td>
+                                62
+                            </td>
+                            <td>
+                                19
+                            </td>
+                        </tr>
+                        <tr style="background-color: #f1f5f9; height: 16px;">
+                            <td colspan="9">
+                            </td>
+                        </tr>
+                        <tr style="background-color: #e8edf2;">
+                            <td colspan="9"
+                                style="font-family: var(--font-mono); font-size: 0.75rem; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: #64748b; padding: 0.6rem 1.5rem;">
+                                Other Keywords
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                Agri business consultant
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                33
+                            </td>
+                            <td>
+                                25
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                23
+                            </td>
+                            <td>
+                                15
+                            </td>
+                            <td>
+                                26
+                            </td>
+                            <td>
+                                29
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                Agri business consultants
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                34
+                            </td>
+                            <td>
+                                17
+                            </td>
+                            <td>
+                                19
+                            </td>
+                            <td>
+                                34
+                            </td>
+                            <td>
+                                15
+                            </td>
+                            <td>
+                                13
+                            </td>
+                            <td>
+                                32
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                change leadership consulting
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                32
+                            </td>
+                            <td>
+                                13
+                            </td>
+                            <td>
+                                1
+                            </td>
+                            <td>
+                                8
+                            </td>
+                            <td>
+                                25
+                            </td>
+                            <td>
+                                11
+                            </td>
+                            <td>
+                                10
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                manufacturing facility layout
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                24
+                            </td>
+                            <td>
+                                8
+                            </td>
+                            <td>
+                                8
+                            </td>
+                            <td>
+                                9
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                visual management control systems
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                26
+                            </td>
+                            <td>
+                                5
+                            </td>
+                            <td>
+                                9
+                            </td>
+                            <td>
+                                9
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                clear to build
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                3
+                            </td>
+                            <td>
+                                3
+                            </td>
+                            <td>
+                                3
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="font-weight: 600;">
+                                clear to build supply chain
+                            </td>
+                            <td>
+                                100+
+                            </td>
+                            <td style="font-weight: 700; color: var(--secondary);">
+                                4
+                            </td>
+                            <td>
+                                5
+                            </td>
+                            <td>
+                                4
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                        <tr style="background-color: #f1f5f9; height: 16px;">
+                            <td colspan="9">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="grid grid-2 mobile-stack" style="margin-top: 3rem;">
+                <div class="card glass highlight reveal" style="color: var(--primary);">
+                    <h3>
+                        SEO Rebound &amp; New Spoke Pages
+                    </h3>
+                    <p>
+                        Aerospace and Defense consulting rankings are bouncing back strong following our strategic
+                        separation of "service" and "industry" pages. Additionally, we've successfully launched new
+                        high-intent spoke pages for Private Equity and Continuous Improvement by strategically
+                        repurposing evergreen blog content.
+                    </p>
+                </div>
+                <div class="card glass reveal" style="color: var(--primary);">
+                    <h3>
+                        LinkedIn Audience Expansion
+                    </h3>
+                    <p>
+                        Continued manual outreach is driving results. The CBS LinkedIn footprint has grown to
+                        <strong>
+                            2,203 followers
+                        </strong>
+                        (as of 4/20/2026), continuing to expand our organic reach.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 4. The Challenge (GA4 Data) -->
+    <section>
+        <div class="container">
+            <h2 class="reveal">
+                The Engagement Challenge
+            </h2>
+            <div class="grid grid-2 channel-performance-grid" style="align-items: center; gap: 4rem;">
+                <div class="reveal"
+                    style="display: flex; flex-direction: column; gap: 2rem; align-self: start; margin-top: 1.5rem;">
+                    <p style="font-size: 1.8rem; line-height: 1.4; color: var(--primary);">
+                        While we are driving more traffic, our Bounce Rate indicates we need better retention paths.
+                    </p>
+                    <div class="insight-card"
+                        style="background: white; padding: 3rem; border-radius: 16px; border-left: 10px solid var(--accent-blue); box-shadow: 0 20px 50px rgba(0,0,0,0.1); display: flex; flex-direction: column; justify-content: center; min-height: 250px;">
+                        <h4
+                            style="font-family: var(--font-mono); font-size: 1.3rem; color: var(--accent-blue); margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 1px;">
+                            Latest GA4 Data (Last 30 Days)
+                        </h4>
+                        <ul
+                            style="margin: 0; padding-left: 1.5rem; font-size: 1.15rem; font-weight: 500; color: var(--primary); line-height: 1.6; display: flex; flex-direction: column; gap: 1rem;">
+                            <li>
+                                <strong>
+                                    Bounce Rate is still a focus:
+                                </strong>
+                                Overall bounce sits at 65.83%. Organic Search is performing better at 35.83%, compared
+                                to Paid Search at 46.98%.
+                            </li>
+                            <li>
+                                <strong>
+                                    Session Duration:
+                                </strong>
+                                Average session duration is 1m 28s.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="reveal"
+                    style="display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%;">
+                    <!-- Funnel Visualization -->
+                    <div class="funnel-container">
+                        <div class="funnel-stage fs-1">
+                            <span class="funnel-label">
+                                New Traffic Entering Site
+                            </span>
+                            <span class="funnel-sub">
+                                SEO Rankings Supporting
+                            </span>
+                        </div>
+                        <div class="funnel-stage fs-2">
+                            <span class="funnel-label">
+                                Content Engagement
+                            </span>
+                            <span class="funnel-sub" style="color: #ffb74d;">
+                                High Bounce Rate
+                            </span>
+                        </div>
+                        <div class="funnel-stage fs-3">
+                            <span class="funnel-label">
+                                Middle of Funnel
+                            </span>
+                            <span class="funnel-sub" style="color: #ff9800;">
+                                Missing Pathways
+                            </span>
+                        </div>
+                        <div class="funnel-stage fs-4">
+                            <span class="funnel-label">
+                                Lead
+                                <br />
+                                Generation
+                            </span>
+                            <span class="funnel-sub" style="color: #d84315; font-weight: 700;">
+                                Conversions
+                                <br />
+                                Need Attention
+                            </span>
+                        </div>
+                    </div>
+                    <div
+                        style="margin-top: 2rem; text-align: center; color: var(--secondary); font-weight: bold; font-size: 1.2rem;">
+                        Lead Generation tracking and optimization is the priority.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 5. Website Performance -->
+    <section class="dark">
+        <div class="container">
+            <h2 class="reveal">
+                Website Performance: Top Pages &amp; Reach
+            </h2>
+            <div class="grid grid-2" style="align-items: flex-start; gap: 4rem;">
+                <div class="reveal">
+                    <p style="font-size: 1.25rem;">
+                        During the March 8th &ndash; April 6th timeframe (30 days leading to report date), we recorded
+                        solid reach across our primary web properties.
+                    </p>
+                    <div class="card glass highlight"
+                        style="text-align: center; color: var(--primary); margin-top: 2rem;">
+                        <div style="font-size: 4rem; font-weight: 700; color: var(--accent-blue); line-height: 1;">
+                            1,182
+                        </div>
+                        <div style="font-size: 1.5rem; font-weight: 600; margin-top: 1rem;">
+                            Total Unique Visitors
+                        </div>
+                        <div style="color: #64748b; margin-top: 0.5rem;">
+                            March 8, 2026 - April 20, 2026
+                        </div>
+                    </div>
+                </div>
+                <div class="reveal">
+                    <h3
+                        style="font-family: var(--font-mono); font-size: 1.2rem; color: white; text-transform: uppercase;">
+                        Top Viewed Pages
+                    </h3>
+                    <div class="data-table-wrapper" style="margin-top: 1rem;">
+                        <table style="font-size: 0.85rem;">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        Page Path
+                                    </th>
+                                    <th style="text-align: right;">
+                                        Views
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="font-weight: 600; word-break: break-all;">
+                                        / (Home)
+                                    </td>
+                                    <td style="text-align: right;">
+                                        660
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: 600; word-break: break-all;">
+                                        /contact-us/
+                                    </td>
+                                    <td style="text-align: right;">
+                                        138
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: 600; word-break: break-all;">
+                                        /about/
+                                    </td>
+                                    <td style="text-align: right;">
+                                        102
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: 600; word-break: break-all;">
+                                        /celebrating-25-years-of-cbs-a-legacy-of-hands-on-transformation/
+                                    </td>
+                                    <td style="text-align: right;">
+                                        98
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: 600; word-break: break-all;">
+                                        /operational-excellence-insights/
+                                    </td>
+                                    <td style="text-align: right;">
+                                        63
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: 600; word-break: break-all;">
+                                        /contact-us/thank-you/
+                                    </td>
+                                    <td style="text-align: right;">
+                                        52
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: 600; word-break: break-all;">
+                                        /lean-consulting-services/
+                                    </td>
+                                    <td style="text-align: right;">
+                                        46
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: 600; word-break: break-all;">
+                                        /maximizing-your-expertise-with-the-right-support/
+                                    </td>
+                                    <td style="text-align: right;">
+                                        28
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: 600; word-break: break-all;">
+                                        /kpis-vs-metrics-sqdcp-performance-measurement/
+                                    </td>
+                                    <td style="text-align: right;">
+                                        27
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="font-weight: 600; word-break: break-all;">
+                                        /lean-consulting-services/operational-excellence-consulting-v2/
+                                    </td>
+                                    <td style="text-align: right;">
+                                        27
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 7. LinkedIn Progress -->
+    <section class="dark">
+        <div class="container">
+            <h2 class="reveal">
+                Social Growth: Consistent Network Building
+            </h2>
+            <div class="grid grid-2" style="align-items: center; gap: 4rem;">
+                <div class="reveal">
+                    <p style="font-size: 1.25rem;">
+                        Our content distribution and outreach are working in tandem to build a focused LinkedIn
+                        audience.
+                    </p>
+                    <ul style="font-size: 1.15rem; margin-top: 2rem; line-height: 1.6; padding-left: 1.5rem;">
+                        <li style="margin-bottom: 1rem;">
+                            <strong>
+                                Follower Growth:
+                            </strong>
+                            Reached
+                            <span style="color: var(--secondary); font-weight: bold;">
+                                2,203 followers
+                            </span>
+                            (as of 4/20).
+                        </li>
+                        <li style="margin-bottom: 1rem;">
+                            <strong>
+                                Content Approvals Status:
+                            </strong>
+                            We ran out of approved content last week. Currently, there are 2 blogs and 1 video with Ed,
+                            and several pieces with consultants to work through the review and approval process.
+                            Additional content is in progress, but we’re at a temporary standstill on posting new
+                            content until approvals move forward. If Ed can prioritize the two blog reviews and video
+                            this week, it will help keep things moving. In the meantime, we will continue posting
+                            3x/week by re-posting approved content we haven't shared more than once before.
+                        </li>
+                    </ul>
+                </div>
+                <div class="reveal card glass highlight" style="text-align: center; color: var(--primary);">
+                    <div style="font-size: 4rem; font-weight: 700; color: var(--accent-blue); line-height: 1;">
+                        2,203
+                    </div>
+                    <div style="font-size: 1.5rem; font-weight: 600; margin-top: 1rem;">
+                        Total LinkedIn Followers
+                    </div>
+                    <div style="color: #64748b; margin-top: 0.5rem;">
+                        Continuing to scale organically
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <!-- 8. The 4-Quadrant Summary -->
-  <section style="background-color: #f8fafc;">
-   <div class="container">
-    <h2 class="reveal" style="text-align: center; margin-bottom: 3rem; border-bottom: none; padding-bottom: 0;">
-     Performance Quadrant
-    </h2>
-    <div class="reveal quadrant-grid">
-     <!-- TOP LEFT: ACHIEVEMENTS -->
-     <div class="quadrant-cell quadrant-top-left">
-      <h3 class="quadrant-header">
-       ACHIEVEMENTS
-      </h3>
-      <div class="quadrant-row">
-       <div class="quadrant-label">
-        SEO
-       </div>
-       <div class="quadrant-content">
-        <p>
-         Launched "spoke" pages for Private Equity and Continuous Improvement hub pages.
-        </p>
-        <p>
-         Updated Yoast AI schema outputs to improve content graph.
-        </p>
-        <p>
-         Aerospace and Defense Consulting rankings have bounced back after the content shifts.
-        </p>
-       </div>
-      </div>
-      <div class="quadrant-row">
-       <div class="quadrant-label">
-        LinkedIn Followers
-       </div>
-       <div class="quadrant-content">
-        <p>
-         2,203 followers (as of 4/20)
-        </p>
-       </div>
-      </div>
-      <div class="quadrant-row">
-       <div class="quadrant-label">
-        Lead Generation
-       </div>
-       <div class="quadrant-content">
-        <p>
-         Scott and Keith met for discovery on what a PPP contract could look like.
-        </p>
-       </div>
-      </div>
-     </div>
-     <!-- TOP RIGHT: CHALLENGES -->
-     <div class="quadrant-cell quadrant-top-right">
-      <h3 class="quadrant-header">
-       CHALLENGES
-      </h3>
-      <div class="quadrant-row">
-       <div class="quadrant-label">
-        SEO
-       </div>
-       <div class="quadrant-content">
-        <p>
-         Google released a core update in late March - early April. During that rollout we were seeing a huge improvement in keywords, indicating CBS content is putting out good E-E-A-T (experience, expertise, authoritativeness, and trustworthiness) scores. That said, we were seeing plenty of ranking volatility during this timeframe, although by all measures we've been trending very well in the right direction. Over the weekend we saw a good amount of volatility in rankings across the board, which we will continue to monitor.
-        </p>
-        <p>
-         We ran out of approved content - we're reposting (which we have plenty of posts that have only been shared once) until we have that. There's a few sitting with Ed, and 15+ further down in the review pipeline.
-        </p>
-       </div>
-      </div>
-      <div class="quadrant-row">
-       <div class="quadrant-label">
-        LinkedIn Followers
-       </div>
-       <div class="quadrant-content">
-        <p>
-         N/A
-        </p>
-       </div>
-      </div>
-      <div class="quadrant-row">
-       <div class="quadrant-label">
-        Lead Generation
-       </div>
-       <div class="quadrant-content">
-        <p>
-         N/A
-        </p>
-       </div>
-      </div>
-     </div>
-     <!-- BOTTOM LEFT: METRICS -->
-     <div class="quadrant-cell quadrant-bottom-left">
-      <h3 class="quadrant-header">
-       METRICS
-      </h3>
-      <div class="quadrant-row">
-       <div class="quadrant-label">
-        SEO
-       </div>
-       <div class="quadrant-content">
-        <p>
-         Bounce rate: 65.83% (last 30 days)
-        </p>
-        <p style="color: var(--accent-teal); font-weight: 600;">
-         Organic Search: 35.83% (last 30-days)
-        </p>
-        <p style="color: var(--accent-teal); font-weight: 600;">
-         Paid Search: 46.98% (last 30 days)
-        </p>
-        <p style="color: var(--accent-teal); font-weight: 600;">
-         Avg. session duration: 1m 28s (last 30 days)
-        </p>
-        <p style="color: var(--accent-teal); font-weight: 600;">
-         Keyword rankings:
-        </p>
-        <table class="quadrant-table">
-         <tr>
-          <td style="color: var(--accent-teal);">
-           Lean Manufacturing Consulting:
-          </td>
-          <td style="color: var(--accent-teal); font-weight: 700; text-align: right;">
-           19
-          </td>
-         </tr>
-         <tr>
-          <td style="color: #b82105;">
-           Private Equity Consulting:
-          </td>
-          <td style="color: #b82105; font-weight: 700; text-align: right;">
-           100+
-          </td>
-         </tr>
-         <tr>
-          <td style="color: #b82105;">
-           Operational Excellence:
-          </td>
-          <td style="color: #b82105; font-weight: 700; text-align: right;">
-           100+
-          </td>
-         </tr>
-         <tr>
-          <td style="color: #b82105;">
-           Continuous Improvement:
-          </td>
-          <td style="color: #b82105; font-weight: 700; text-align: right;">
-           100+
-          </td>
-         </tr>
-         <tr>
-          <td style="color: #d97706;">
-           Aerospace and Defense Consulting:
-          </td>
-          <td style="color: #d97706; font-weight: 700; text-align: right;">
-           46
-          </td>
-         </tr>
-        </table>
-       </div>
-      </div>
-      <div class="quadrant-row">
-       <div class="quadrant-label">
-        LinkedIn Followers
-       </div>
-       <div class="quadrant-content">
-        <p style="color: var(--accent-teal); font-weight: 600;">
-         2,203 followers (as of 4/20)
-        </p>
-       </div>
-      </div>
-      <div class="quadrant-row">
-       <div class="quadrant-label">
-        Lead Generation
-       </div>
-       <div class="quadrant-content">
-        <p>
-         N/A
-        </p>
-       </div>
-      </div>
-     </div>
-     <!-- BOTTOM RIGHT: NEXT STEPS -->
-     <div class="quadrant-cell quadrant-bottom-right">
-      <h3 class="quadrant-header">
-       NEXT STEPS
-      </h3>
-      <div class="quadrant-row">
-       <div class="quadrant-label">
-        SEO
-       </div>
-       <div class="quadrant-content">
-        <p>
-         Continued rollout of new blogs, updated hub and spoke pages as they become available.
-        </p>
-       </div>
-      </div>
-      <div class="quadrant-row">
-       <div class="quadrant-label">
-        LinkedIn Followers
-       </div>
-       <div class="quadrant-content">
-        <p>
-         Will continue to post and re-share 3x a week, and invite followers on behalf of CBS
-        </p>
-        <p>
-         Completing an internal review and audit of the Top of the funnel strategy and results and will present an optimized strategy at our next bi-weekly.
-        </p>
-       </div>
-      </div>
-      <div class="quadrant-row">
-       <div class="quadrant-label">
-        Lead Generation
-       </div>
-       <div class="quadrant-content">
-        <p>
-         Scott action items from meeting: restructure contract for pay per performance, further develop the software idea we pitched.
-        </p>
-       </div>
-      </div>
-     </div>
+    <!-- 8. The 4-Quadrant Summary -->
+    <section style="background-color: #f8fafc;">
+        <div class="container">
+            <h2 class="reveal" style="text-align: center; margin-bottom: 3rem; border-bottom: none; padding-bottom: 0;">
+                Performance Quadrant
+            </h2>
+            <div class="reveal quadrant-grid">
+                <!-- TOP LEFT: ACHIEVEMENTS -->
+                <div class="quadrant-cell quadrant-top-left">
+                    <h3 class="quadrant-header">
+                        ACHIEVEMENTS
+                    </h3>
+                    <div class="quadrant-row">
+                        <div class="quadrant-label">
+                            SEO
+                        </div>
+                        <div class="quadrant-content">
+                            <p>
+                                Launched "spoke" pages for Private Equity and Continuous Improvement hub pages.
+                            </p>
+                            <p>
+                                Updated Yoast AI schema outputs to improve content graph.
+                            </p>
+                            <p>
+                                Aerospace and Defense Consulting rankings have bounced back after the content shifts.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="quadrant-row">
+                        <div class="quadrant-label">
+                            LinkedIn Followers
+                        </div>
+                        <div class="quadrant-content">
+                            <p>
+                                2,203 followers (as of 4/20)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="quadrant-row">
+                        <div class="quadrant-label">
+                            Lead Generation
+                        </div>
+                        <div class="quadrant-content">
+                            <p>
+                                Scott and Keith met for discovery on what a PPP contract could look like.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- TOP RIGHT: CHALLENGES -->
+                <div class="quadrant-cell quadrant-top-right">
+                    <h3 class="quadrant-header">
+                        CHALLENGES
+                    </h3>
+                    <div class="quadrant-row">
+                        <div class="quadrant-label">
+                            SEO
+                        </div>
+                        <div class="quadrant-content">
+                            <p>
+                                Google released a core update in late March - early April. During that rollout we were
+                                seeing a huge improvement in keywords, indicating CBS content is putting out good
+                                E-E-A-T (experience, expertise, authoritativeness, and trustworthiness) scores. That
+                                said, we were seeing plenty of ranking volatility during this timeframe, although by all
+                                measures we've been trending very well in the right direction. Over the weekend we saw a
+                                good amount of volatility in rankings across the board, which we will continue to
+                                monitor.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="quadrant-row">
+                        <div class="quadrant-label">
+                            LinkedIn Followers
+                        </div>
+                        <div class="quadrant-content">
+                            <p>
+                                We ran out of approved content - we're reposting (which we have plenty of posts that
+                                have only been shared once) until we have that. There's a few sitting with Ed, and 15+
+                                further down in the review pipeline.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="quadrant-row">
+                        <div class="quadrant-label">
+                            Lead Generation
+                        </div>
+                        <div class="quadrant-content">
+                            <p>
+                                N/A
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- BOTTOM LEFT: METRICS -->
+                <div class="quadrant-cell quadrant-bottom-left">
+                    <h3 class="quadrant-header">
+                        METRICS
+                    </h3>
+                    <div class="quadrant-row">
+                        <div class="quadrant-label">
+                            SEO
+                        </div>
+                        <div class="quadrant-content">
+                            <p>
+                                Bounce rate: 65.83% (last 30 days)
+                            </p>
+                            <p style="color: var(--accent-teal); font-weight: 600;">
+                                Organic Search: 35.83% (last 30-days)
+                            </p>
+                            <p style="color: var(--accent-teal); font-weight: 600;">
+                                Paid Search: 46.98% (last 30 days)
+                            </p>
+                            <p style="color: var(--accent-teal); font-weight: 600;">
+                                Avg. session duration: 1m 28s (last 30 days)
+                            </p>
+                            <p style="color: var(--accent-teal); font-weight: 600;">
+                                Keyword rankings:
+                            </p>
+                            <table class="quadrant-table">
+                                <tr>
+                                    <td style="color: var(--accent-teal);">
+                                        Lean Manufacturing Consulting:
+                                    </td>
+                                    <td style="color: var(--accent-teal); font-weight: 700; text-align: right;">
+                                        19
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #b82105;">
+                                        Private Equity Consulting:
+                                    </td>
+                                    <td style="color: #b82105; font-weight: 700; text-align: right;">
+                                        100+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #b82105;">
+                                        Operational Excellence:
+                                    </td>
+                                    <td style="color: #b82105; font-weight: 700; text-align: right;">
+                                        100+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #b82105;">
+                                        Continuous Improvement:
+                                    </td>
+                                    <td style="color: #b82105; font-weight: 700; text-align: right;">
+                                        100+
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="color: #d97706;">
+                                        Aerospace and Defense Consulting:
+                                    </td>
+                                    <td style="color: #d97706; font-weight: 700; text-align: right;">
+                                        46
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="quadrant-row">
+                        <div class="quadrant-label">
+                            LinkedIn Followers
+                        </div>
+                        <div class="quadrant-content">
+                            <p style="color: var(--accent-teal); font-weight: 600;">
+                                2,203 followers (as of 4/20)
+                            </p>
+                        </div>
+                    </div>
+                    <div class="quadrant-row">
+                        <div class="quadrant-label">
+                            Lead Generation
+                        </div>
+                        <div class="quadrant-content">
+                            <p>
+                                N/A
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- BOTTOM RIGHT: NEXT STEPS -->
+                <div class="quadrant-cell quadrant-bottom-right">
+                    <h3 class="quadrant-header">
+                        NEXT STEPS
+                    </h3>
+                    <div class="quadrant-row">
+                        <div class="quadrant-label">
+                            SEO
+                        </div>
+                        <div class="quadrant-content">
+                            <p>
+                                Continued rollout of new blogs, updated hub and spoke pages as they become available.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="quadrant-row">
+                        <div class="quadrant-label">
+                            LinkedIn Followers
+                        </div>
+                        <div class="quadrant-content">
+                            <p>
+                                Will continue to post and re-share 3x a week, and invite followers on behalf of CBS
+                            </p>
+                            <p>
+                                Completing an internal review and audit of the Top of the funnel strategy and results
+                                and will present an optimized strategy at our next bi-weekly.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="quadrant-row">
+                        <div class="quadrant-label">
+                            Lead Generation
+                        </div>
+                        <div class="quadrant-content">
+                            <p>
+                                Scott action items from meeting: restructure contract for pay per performance, further
+                                develop the software idea we pitched.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="vm-footer">
+        <img alt="Vinyl Marketing" src="../../Design-Elements/vinyl-logos/VMLogo.svg"
+            style="height: 24px; opacity: 0.5; margin-bottom: 1rem;" />
+        <div>
+            Prepared by Vinyl Marketing
+        </div>
+        <div style="font-size: 0.8rem; margin-top: 0.5rem;">
+            Strategic Growth &amp; Digital Performance
+        </div>
     </div>
-   </div>
-  </section>
-  <div class="vm-footer">
-   <img alt="Vinyl Marketing" src="../../Design-Elements/vinyl-logos/VMLogo.svg" style="height: 24px; opacity: 0.5; margin-bottom: 1rem;"/>
-   <div>
-    Prepared by Vinyl Marketing
-   </div>
-   <div style="font-size: 0.8rem; margin-top: 0.5rem;">
-    Strategic Growth &amp; Digital Performance
-   </div>
-  </div>
-  <!-- Core Javascript for Scroll Animations -->
-  <script>
-   function reveal() {
+    <!-- Core Javascript for Scroll Animations -->
+    <script>
+        function reveal() {
             var reveals = document.querySelectorAll(".reveal");
             var windowHeight = window.innerHeight;
             var elementVisible = 100; // when to trigger
@@ -2539,6 +2673,7 @@
 
         window.addEventListener("scroll", reveal);
         setTimeout(reveal, 100);
-  </script>
- </body>
+    </script>
+</body>
+
 </html>
